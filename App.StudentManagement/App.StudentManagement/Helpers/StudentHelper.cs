@@ -16,14 +16,17 @@ namespace App.StudentManagement.Helpers
 
             Console.WriteLine("What is the name of the student? ");
             var name = Console.ReadLine();
-            Console.WriteLine("What is the ID of the studet?");
-            var id = Console.ReadLine();
             Console.WriteLine("What is the sutdent's classifcation? 'Freshman', 'Sophomore', 'Junior', 'Senior'");
             var classification = Console.ReadLine() ?? string.Empty;
 
+            Random random = new Random();
+            int minValue = 1000;
+            int maxValue = 9999;
+            int randomNumber = random.Next(minValue, maxValue);
+
             var student = new Person
             {
-                Id = int.Parse(id ?? "0"),
+                Id = randomNumber,
                 Name = name ?? string.Empty,
                 Classification = classification
             };
