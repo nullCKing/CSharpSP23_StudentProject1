@@ -10,7 +10,7 @@
 
         public Dictionary<int, double> Grades { get; set; }
 
-        public char Classification { get; set; }
+        public string? Classification { get; set; }
         
         //Dictionaries, lists, etc. should be added to the constructors when possible
         //It's not required, but it avoids null reference exception.
@@ -18,5 +18,17 @@
         {
             Grades = new Dictionary<int, double>();
         }
+
+        public override string ToString()
+        {
+            return $"[#{Id}]: {Name} | {Classification}";
+        }
     }
+
+    /*
+    public enum PersonClassification
+    {
+        Freshman, Sophomore, Junior, Senior
+    }
+    */
 }
