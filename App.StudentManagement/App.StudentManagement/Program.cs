@@ -20,6 +20,10 @@ namespace MyApp // Note: actual namespace depends on the project name.
                     {
                         studentHelper.CreateStudent();
                     }
+                    if (result == 2)
+                    {
+                        studentHelper.ListAllStudents();
+                    }
                     printMenu.ConsolePrint();
                     input = Console.ReadLine();
                     int.TryParse(input, out result );

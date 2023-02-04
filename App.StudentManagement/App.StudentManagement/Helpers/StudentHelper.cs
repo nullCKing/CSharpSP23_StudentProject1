@@ -20,22 +20,6 @@ namespace App.StudentManagement.Helpers
             var id = Console.ReadLine();
             Console.WriteLine("What is the sutdent's classifcation? 'Freshman', 'Sophomore', 'Junior', 'Senior'");
             var classification = Console.ReadLine() ?? string.Empty;
-            /*
-            PersonClassification classEnum = PersonClassification.Freshman;
-
-            if(classification.Equals("S", StringComparison.InvariantCultureIgnoreCase))
-            {
-                classEnum = PersonClassification.Senior;
-            }
-            else if (classification.Equals("O", StringComparison.InvariantCultureIgnoreCase))
-            {
-                classEnum = PersonClassification.Sophomore;
-            }
-            else if (classification.Equals("J", StringComparison.InvariantCultureIgnoreCase))
-            {
-                classEnum = PersonClassification.Junior;
-            }
-            */
 
             var student = new Person
             {
@@ -45,7 +29,11 @@ namespace App.StudentManagement.Helpers
             };
 
             studentService.Add(student);
-            studentService.studentList.ForEach(Console.WriteLine); //student is being implied within ForEach
+        }
+
+        public void ListAllStudents()
+        {
+            studentService.Students.ForEach(Console.WriteLine);
         }
     }
 }
