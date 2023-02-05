@@ -14,6 +14,7 @@ namespace App.StudentManagement.Helpers
             Console.WriteLine("[0] Exit");
             Console.WriteLine("[1] Add student to registry");
             Console.WriteLine("[2] List all students");
+            Console.WriteLine("[3] Search for a student");
             Console.WriteLine("");
             Console.WriteLine("Enter option number:");
         }

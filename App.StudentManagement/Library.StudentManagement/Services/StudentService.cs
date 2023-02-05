@@ -22,5 +22,10 @@ namespace Library.StudentManagement.Services
             get { return studentList; }
         }
 
+        public IEnumerable<Person> Search(string query)
+        {
+            //Can alternatively use List<Person> and add a .ToList() in place of IEnumerable, but this will create a deep copy.
+            return studentList.Where(s => s.Name.ToUpper().Contains(query.ToUpper()));
+        }
     }
 }
