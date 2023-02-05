@@ -31,13 +31,17 @@ namespace MyApp // Note: actual namespace depends on the project name.
                     }
                     else if (result == 4)
                     {
-                        courseHelper.CreateCourse();
+                        studentHelper.UpdateStudent();
                     }
                     else if (result == 5)
                     {
-                        courseHelper.ListAllCourses();
+                        courseHelper.CreateCourse();
                     }
                     else if (result == 6)
+                    {
+                        courseHelper.ListAllCourses();
+                    }
+                    else if (result == 7)
                     {
                         courseHelper.SearchCourse();
                     }
