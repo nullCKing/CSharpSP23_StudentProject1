@@ -10,6 +10,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
         {
             var printMenu = new PrintHelper();
             var studentHelper = new StudentHelper();
+            var courseHelper = new CourseHelper();
             printMenu.ConsolePrint();
             var input = Console.ReadLine();
             if(int.TryParse(input, out int result) ) 
@@ -27,6 +28,18 @@ namespace MyApp // Note: actual namespace depends on the project name.
                     else if (result == 3)
                     {
                         studentHelper.SearchStudent();
+                    }
+                    else if (result == 4)
+                    {
+                        courseHelper.CreateCourse();
+                    }
+                    else if (result == 5)
+                    {
+                        courseHelper.ListAllCourses();
+                    }
+                    else if (result == 6)
+                    {
+                        courseHelper.SearchCourse();
                     }
                     printMenu.ConsolePrint();
                     input = Console.ReadLine();
