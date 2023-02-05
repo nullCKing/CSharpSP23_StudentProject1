@@ -11,6 +11,7 @@ namespace App.StudentManagement.Helpers
     public class CourseHelper
     {
         private CourseService courseService = new CourseService();
+        private StudentService studentService = new StudentService();
         public void CreateCourse(Course? selectedCourse = null)
         {
 
@@ -26,6 +27,29 @@ namespace App.StudentManagement.Helpers
                 Console.WriteLine("Please re-enter a unique course code:");
                 classification = Console.ReadLine() ?? string.Empty;
             }
+            var roster = new List<Person>();
+            Console.WriteLine("Which students should be entrolled in this course? (Enter Q to exit)");
+            bool contAdd = true;
+            while(contAdd)
+            {
+                studentService.Students.Where(s=>!roster.Any(s2 => s2.Id == s.Id)).ToList().ForEach(Console.WriteLine);
+                var selection = Console.ReadLine() ?? string.Empty;
+
+                if(selection == "q" || selection== "Q")
+                {
+                    contAdd = false;
+                }
+                else
+                {
+                    var selectedID = int.Parse(selection);
+                    var selectedStudent = studentService.Students.FirstOrDefault(s => s.Id == selectedID);
+
+                    if (selectedStudent != null)
+                    {
+                        roster.Add(selectedStudent);
+                    }
+                }
+            }
 
             bool isCreated = false;
             if (selectedCourse == null)
@@ -37,6 +61,8 @@ namespace App.StudentManagement.Helpers
             selectedCourse.Name = name ?? string.Empty;
             selectedCourse.Description = classification;
             selectedCourse.Code = courseCode;
+            selectedCourse.Roster = new List<Person>();
+            selectedCourse.Roster.AddRange(roster);
 
             if (isCreated)
             {
