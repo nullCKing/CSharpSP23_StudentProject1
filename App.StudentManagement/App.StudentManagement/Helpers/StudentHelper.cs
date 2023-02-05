@@ -33,6 +33,7 @@ namespace App.StudentManagement.Helpers
                     break;
                 }
             }
+
             var student = new Person
             {
                 Id = assignedID,
@@ -55,5 +56,6 @@ namespace App.StudentManagement.Helpers
 
             studentService.Search(query).ToList().ForEach(Console.WriteLine);
         }
+
     }
 }

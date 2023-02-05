@@ -27,5 +27,6 @@ namespace Library.StudentManagement.Services
             //Can alternatively use List<Person> and add a .ToList() in place of IEnumerable, but this will create a deep copy.
             return studentList.Where(s => s.Name.ToUpper().Contains(query.ToUpper()));
         }
+
     }
 }
