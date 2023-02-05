@@ -19,6 +19,7 @@ namespace App.StudentManagement.Helpers
             Console.WriteLine("[5] Add a course");
             Console.WriteLine("[6] List all courses");
             Console.WriteLine("[7] Search for a course");
+            Console.WriteLine("[8] Update a course");
             Console.WriteLine("");
             Console.WriteLine("Enter option number:");
         }

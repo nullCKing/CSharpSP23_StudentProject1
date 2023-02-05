@@ -45,6 +45,10 @@ namespace MyApp // Note: actual namespace depends on the project name.
                     {
                         courseHelper.SearchCourse();
                     }
+                    else if (result == 8)
+                    {
+                        courseHelper.UpdateCourse();
+                    }
                     printMenu.ConsolePrint();
                     input = Console.ReadLine();
                     int.TryParse(input, out result );

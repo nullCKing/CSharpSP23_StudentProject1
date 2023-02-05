@@ -11,7 +11,7 @@ namespace App.StudentManagement.Helpers
     public class CourseHelper
     {
         private CourseService courseService = new CourseService();
-        public void CreateCourse()
+        public void CreateCourse(Course? selectedCourse = null)
         {
 
             Console.WriteLine("Enter the course name");
@@ -19,29 +19,30 @@ namespace App.StudentManagement.Helpers
             Console.WriteLine("Enter the course description");
             var classification = Console.ReadLine() ?? string.Empty;
 
-            Random random = new Random();
-            int minValue = 100;
-            int maxValue = 999;
-            int assignedID = 0;
-
-            while (true)
+            Console.WriteLine("Enter the course code:");
+            var courseCode = Console.ReadLine() ?? string.Empty;
+            while (courseService.Courses.Any(c => c.Code == courseCode))
             {
-                int randomId = random.Next(minValue, maxValue);
-                if (!courseService.Courses.Any(c => c.Code == randomId.ToString()))
-                {
-                    assignedID = randomId;
-                    break;
-                }
+                Console.WriteLine("Please re-enter a unique course code:");
+                classification = Console.ReadLine() ?? string.Empty;
             }
 
-            var course = new Course
+            bool isCreated = false;
+            if (selectedCourse == null)
             {
-                Code = assignedID.ToString(),
-                Name = name ?? string.Empty,
-                Description = classification
+                selectedCourse = new Course();
+                isCreated = true;
             };
 
-            courseService.Add(course);
+            selectedCourse.Name = name ?? string.Empty;
+            selectedCourse.Description = classification;
+            selectedCourse.Code = courseCode;
+
+            if (isCreated)
+            {
+                courseService.Add(selectedCourse);
+            }
+
         }
 
         public void ListAllCourses()
@@ -55,6 +56,25 @@ namespace App.StudentManagement.Helpers
             var query = Console.ReadLine() ?? string.Empty;
 
             courseService.Search(query).ToList().ForEach(Console.WriteLine);
+        }
+
+        public void UpdateCourse()
+        {
+            Console.WriteLine("Now listing all course:");
+            courseService.Courses.ForEach(Console.WriteLine);
+            Console.WriteLine("Please enter the code for the course you'd like to update (numeric values only):");
+
+            var selection = Console.ReadLine();
+
+            if (int.TryParse(selection, out int selectionInt))
+            {
+                var selectedCourse = courseService.Courses.FirstOrDefault(s => s.Code == selectionInt.ToString());
+                if (selectedCourse != null)
+                {
+                    CreateCourse(selectedCourse);
+                }
+            }
+
         }
 
     }
