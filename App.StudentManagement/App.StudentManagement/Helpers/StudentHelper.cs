@@ -11,7 +11,20 @@ namespace App.StudentManagement.Helpers
 {
     internal class StudentHelper
     {
-        private StudentService studentService = new StudentService();
+        private StudentService studentService;
+
+        public StudentHelper()
+        {
+            this.studentService = StudentService.Current;
+        }
+
+        public List<Person> Persons
+        {
+            get
+            {
+                return studentService.studentList.ToList();
+            }
+        }
         public void CreateStudent(Person? selectedStudent = null)
         {
 

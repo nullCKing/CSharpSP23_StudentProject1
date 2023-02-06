@@ -10,7 +10,25 @@ namespace Library.StudentManagement.Services
 {
     public class StudentService
     {
-        public List<Person> studentList = new List<Person>();
+        //private static object _lock = new object();
+        private static StudentService? _instance;
+        public static StudentService Current
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new StudentService();
+                }
+                return _instance;
+            }
+        }
+
+        public List<Person> studentList { get; set; }
+        private StudentService()
+        {
+            studentList = new List<Person>();
+        }
 
         public void Add(Person person)
         {

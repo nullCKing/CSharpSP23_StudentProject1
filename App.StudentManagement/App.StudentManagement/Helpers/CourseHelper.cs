@@ -11,13 +11,27 @@ namespace App.StudentManagement.Helpers
     public class CourseHelper
     {
         private CourseService courseService = new CourseService();
-        private StudentService studentService = new StudentService();
+        private StudentService studentService;
+
+        public CourseHelper()
+        {
+            this.studentService = StudentService.Current;
+        }
+
+        public List<Person> Persons
+        {
+            get
+            {
+                return studentService.studentList.ToList();
+            }
+        }
+
         public void CreateCourse(Course? selectedCourse = null)
         {
 
-            Console.WriteLine("Enter the course name");
+            Console.WriteLine("Enter the course name:");
             var name = Console.ReadLine();
-            Console.WriteLine("Enter the course description");
+            Console.WriteLine("Enter the course description:");
             var classification = Console.ReadLine() ?? string.Empty;
 
             Console.WriteLine("Enter the course code:");
@@ -27,12 +41,13 @@ namespace App.StudentManagement.Helpers
                 Console.WriteLine("Please re-enter a unique course code:");
                 classification = Console.ReadLine() ?? string.Empty;
             }
+
             var roster = new List<Person>();
-            Console.WriteLine("Which students should be entrolled in this course? (Enter Q to exit)");
+            Console.WriteLine("Which students should be entrolled in this course? (Enter numeric ID || Q to exit)");
             bool contAdd = true;
             while(contAdd)
             {
-                studentService.Students.Where(s=>!roster.Any(s2 => s2.Id == s.Id)).ToList().ForEach(Console.WriteLine);
+                studentService.studentList.ToList().Where(s=>!roster.Any(s2 => s2.Id == s.Id)).ToList().ForEach(Console.WriteLine);
                 var selection = Console.ReadLine() ?? string.Empty;
 
                 if(selection == "q" || selection== "Q")
@@ -81,7 +96,15 @@ namespace App.StudentManagement.Helpers
             Console.WriteLine("Enter a query:");
             var query = Console.ReadLine() ?? string.Empty;
 
-            courseService.Search(query).ToList().ForEach(Console.WriteLine);
+            foreach (var course in courseService.Search(query))
+            {
+                Console.WriteLine(course);
+                Console.WriteLine("Roster:");
+                foreach (var person in course.Roster)
+                {
+                    Console.WriteLine("  " + person);
+                }
+            }
         }
 
         public void UpdateCourse()

@@ -19,7 +19,7 @@
 
         public override string ToString()
         {
-            return $"[#{Code}] {Name}: \n{Description}";
+            return $"[Course Code: {Code}] | Name: {Name}: \nDescription: {Description}";
         }
     }
 }
