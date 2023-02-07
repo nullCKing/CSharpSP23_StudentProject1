@@ -49,6 +49,10 @@ namespace MyApp // Note: actual namespace depends on the project name.
                     {
                         courseHelper.UpdateCourse();
                     }
+                    else if (result == 9)
+                    {
+                        courseHelper.RemoveStudent();
+                    }
                     printMenu.ConsolePrint();
                     input = Console.ReadLine();
                     int.TryParse(input, out result );

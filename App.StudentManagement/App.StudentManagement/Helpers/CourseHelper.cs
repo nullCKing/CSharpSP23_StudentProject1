@@ -45,12 +45,12 @@ namespace App.StudentManagement.Helpers
             var roster = new List<Person>();
             Console.WriteLine("Which students should be entrolled in this course? (Enter numeric ID || Q to exit)");
             bool contAdd = true;
-            while(contAdd)
+            while (contAdd)
             {
-                studentService.studentList.ToList().Where(s=>!roster.Any(s2 => s2.Id == s.Id)).ToList().ForEach(Console.WriteLine);
+                studentService.studentList.ToList().Where(s => !roster.Any(s2 => s2.Id == s.Id)).ToList().ForEach(Console.WriteLine);
                 var selection = Console.ReadLine() ?? string.Empty;
 
-                if(selection == "q" || selection== "Q")
+                if (selection == "q" || selection == "Q")
                 {
                     contAdd = false;
                 }
@@ -124,6 +124,46 @@ namespace App.StudentManagement.Helpers
                 }
             }
 
+        }
+
+        public void RemoveStudent()
+        {
+            Console.WriteLine("Now listing all courses:");
+            courseService.Courses.ForEach(Console.WriteLine);
+            Console.WriteLine("Please enter the code for the course from which you'd like to remove a student (numeric values only):");
+
+            var courseSelection = Console.ReadLine();
+
+            if (int.TryParse(courseSelection, out int courseSelectionInt))
+            {
+                var selectedCourse = courseService.Courses.FirstOrDefault(c => c.Code == courseSelectionInt.ToString());
+                if (selectedCourse != null)
+                {
+                    Console.WriteLine("Now listing all students enrolled in this course:");
+                    selectedCourse.Roster.ForEach(Console.WriteLine);
+                    Console.WriteLine("Please enter the ID of the student you'd like to remove (numeric values only):");
+
+                    var studentSelection = Console.ReadLine();
+
+                    if (int.TryParse(studentSelection, out int studentSelectionInt))
+                    {
+                        var selectedStudent = studentService.Students.FirstOrDefault(s => s.Id == studentSelectionInt);
+                        if (selectedStudent != null)
+                        {
+                            selectedCourse.Roster.Remove(selectedStudent);
+                            Console.WriteLine("Student successfully removed from the course.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Student not found.");
+                        }
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Course not found.");
+                }
+            }
         }
 
     }
