@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,10 +13,12 @@ namespace App.StudentManagement.Helpers
     {
         private CourseService courseService = new CourseService();
         private StudentService studentService;
+        private AssignmentService assignmentService;
 
         public CourseHelper()
         {
             this.studentService = StudentService.Current;
+            this.assignmentService = AssignmentService.Current;
         }
 
         public List<Person> Persons
@@ -23,6 +26,14 @@ namespace App.StudentManagement.Helpers
             get
             {
                 return studentService.studentList.ToList();
+            }
+        }
+
+        public List<Assignment> Assignments
+        {
+            get
+            {
+                return assignmentService.assignmentList.ToList();
             }
         }
 
@@ -43,6 +54,7 @@ namespace App.StudentManagement.Helpers
             }
 
             var roster = new List<Person>();
+            var assignments = new List<Assignment>();
             Console.WriteLine("Which students should be entrolled in this course? (Enter numeric ID || Q to exit)");
             bool contAdd = true;
             while (contAdd)
@@ -70,6 +82,7 @@ namespace App.StudentManagement.Helpers
             if (selectedCourse == null)
             {
                 selectedCourse = new Course();
+                selectedCourse.Assignments = new List<Assignment>();
                 isCreated = true;
             };
 
@@ -78,6 +91,55 @@ namespace App.StudentManagement.Helpers
             selectedCourse.Code = courseCode;
             selectedCourse.Roster = new List<Person>();
             selectedCourse.Roster.AddRange(roster);
+
+            bool assignmentAdd = true;
+            selectedCourse.Assignments = new List<Assignment>();
+            while (assignmentAdd)
+            {
+                Console.WriteLine("Create assignments for this course || (Enter Y to proceed or N to stop)");
+                var selection = Console.ReadLine() ?? string.Empty;
+
+                if (selection == "n" || selection == "N")
+                {
+                    assignmentAdd = false;
+                }
+                else
+                {
+                    Console.WriteLine("Enter total available points: ");
+                    var points = Console.ReadLine() ?? string.Empty;
+                    Console.WriteLine("Enter assignment name: ");
+                    var assignmentName = Console.ReadLine() ?? string.Empty;
+                    Console.WriteLine("Enter assignment description: ");
+                    var description = Console.ReadLine() ?? string.Empty;
+                    Console.WriteLine("Enter a due date (MM/dd/yyyy hh:mm:ss): ");
+                    string dueInput = Console.ReadLine();
+                    DateTime due;
+                    if (!DateTime.TryParseExact(dueInput, "MM/dd/yyyy hh:mm:ss", CultureInfo.InvariantCulture, DateTimeStyles.None, out due))
+                    {
+                        Console.WriteLine("Invalid date format.");
+                    }
+                    Assignment assignment = new Assignment();
+                    assignment.Name = assignmentName;
+                    assignment.Description = description;
+                    assignment.DueDate = due;
+                    if (int.TryParse(points, out int pointsInt))
+                    {
+                        assignment.TotalAvailablePoints = pointsInt;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid input. Please enter a valid integer.");
+                    }
+                    selectedCourse.Assignments.Add(assignment);
+                }
+            }
+
+
+            Console.WriteLine("Assignment:");
+            foreach (var assignment in selectedCourse.Assignments)
+            {
+                Console.WriteLine("  " + assignment);
+            }
 
             if (isCreated)
             {
@@ -103,6 +165,11 @@ namespace App.StudentManagement.Helpers
                 foreach (var person in course.Roster)
                 {
                     Console.WriteLine("  " + person);
+                }
+                Console.WriteLine("Assignment:");
+                foreach (var assignment in course.Assignments)
+                {
+                    Console.WriteLine("  " + assignment);
                 }
             }
         }
