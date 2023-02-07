@@ -11,6 +11,26 @@ namespace Library.StudentManagement.Services
     {
         public List<Course> courseList = new List<Course>();
 
+        private static CourseService? _instance;
+
+        public static CourseService Current
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new CourseService();
+                }
+
+                return _instance;
+            }
+        }
+
+        private CourseService()
+        {
+            courseList = new List<Course>();
+        }
+
         public void Add(Course course)
         {
             courseList.Add(course);

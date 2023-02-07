@@ -10,8 +10,15 @@ namespace Library.StudentManagement.Services
 {
     public class StudentService
     {
-        //private static object _lock = new object();
+        private List<Person> studentList;
+
         private static StudentService? _instance;
+
+        private StudentService()
+        {
+            studentList = new List<Person>();
+        }
+
         public static StudentService Current
         {
             get
@@ -24,11 +31,6 @@ namespace Library.StudentManagement.Services
             }
         }
 
-        public List<Person> studentList { get; set; }
-        private StudentService()
-        {
-            studentList = new List<Person>();
-        }
 
         public void Add(Person person)
         {

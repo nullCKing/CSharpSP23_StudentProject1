@@ -11,20 +11,24 @@ namespace App.StudentManagement.Helpers
 {
     internal class StudentHelper
     {
-        private StudentService studentService;
 
+        private StudentService studentService;
+        private CourseService courseService;
         public StudentHelper()
         {
-            this.studentService = StudentService.Current;
+            studentService = StudentService.Current;
+            courseService = CourseService.Current;
         }
+
 
         public List<Person> Persons
         {
             get
             {
-                return studentService.studentList.ToList();
+                return studentService.Students.ToList();
             }
         }
+        
         public void CreateStudent(Person? selectedStudent = null)
         {
 
@@ -92,14 +96,29 @@ namespace App.StudentManagement.Helpers
         public void ListAllStudents()
         {
             studentService.Students.ForEach(Console.WriteLine);
+
+            Console.WriteLine("Enter the ID of a specific student: ");
+            var selection = Console.ReadLine();
+            var selectionInt = int.Parse(selection ?? "0");
+
+            Console.WriteLine("Student Course List:");
+            courseService.Courses.Where(c => c.Roster.Any(s => s.Id == selectionInt)).ToList().ForEach(Console.WriteLine);
         }
 
         public void SearchStudent()
         {
-            Console.WriteLine("Enter a query:");
+            Console.WriteLine("Enter a name to search for:");
             var query = Console.ReadLine() ?? string.Empty;
 
             studentService.Search(query).ToList().ForEach(Console.WriteLine);
+
+            Console.WriteLine("Enter the ID of a specific student: ");
+            var selection = Console.ReadLine();
+            var selectionInt = int.Parse(selection ?? "0");
+
+
+            Console.WriteLine("Student Course List:");
+            courseService.Courses.Where(c => c.Roster.Any(s => s.Id == selectionInt)).ToList().ForEach(Console.WriteLine);
         }
 
         public void UpdateStudent()

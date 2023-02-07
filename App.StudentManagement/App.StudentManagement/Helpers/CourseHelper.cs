@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -11,30 +12,13 @@ namespace App.StudentManagement.Helpers
 {
     public class CourseHelper
     {
-        private CourseService courseService = new CourseService();
+        private CourseService courseService;
         private StudentService studentService;
-        private AssignmentService assignmentService;
 
-        public CourseHelper()
+        public CourseHelper() 
         {
-            this.studentService = StudentService.Current;
-            this.assignmentService = AssignmentService.Current;
-        }
-
-        public List<Person> Persons
-        {
-            get
-            {
-                return studentService.studentList.ToList();
-            }
-        }
-
-        public List<Assignment> Assignments
-        {
-            get
-            {
-                return assignmentService.assignmentList.ToList();
-            }
+            studentService = StudentService.Current;
+            courseService = CourseService.Current;
         }
 
         public void CreateCourse(Course? selectedCourse = null)
@@ -59,7 +43,8 @@ namespace App.StudentManagement.Helpers
             bool contAdd = true;
             while (contAdd)
             {
-                studentService.studentList.ToList().Where(s => !roster.Any(s2 => s2.Id == s.Id)).ToList().ForEach(Console.WriteLine);
+                //Where clause keeps student from being duplicated in roster
+                studentService.Students.ToList().Where(s => !roster.Any(s2 => s2.Id == s.Id)).ToList().ForEach(Console.WriteLine);
                 var selection = Console.ReadLine() ?? string.Empty;
 
                 if (selection == "q" || selection == "Q")
@@ -232,7 +217,6 @@ namespace App.StudentManagement.Helpers
                 }
             }
         }
-
     }
 }
 
