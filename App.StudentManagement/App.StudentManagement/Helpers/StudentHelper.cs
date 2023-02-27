@@ -21,7 +21,7 @@ namespace App.StudentManagement.Helpers
         }
 
 
-        public List<Person> Persons
+        public List<Student> Students
         {
             get
             {
@@ -29,7 +29,7 @@ namespace App.StudentManagement.Helpers
             }
         }
         
-        public void CreateStudent(Person? selectedStudent = null)
+        public void CreateStudent(Student? selectedStudent = null)
         {
 
             Console.WriteLine("Enter student's name:");
@@ -79,7 +79,7 @@ namespace App.StudentManagement.Helpers
 
             bool isCreated = false;
             if (selectedStudent == null) {
-                selectedStudent = new Person();
+                selectedStudent = new Student();
                 isCreated= true;
             };
 
