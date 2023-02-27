@@ -10,20 +10,10 @@
         
         //Dictionaries, lists, etc. should be added to the constructors when possible
         //It's not required, but it avoids null reference exception.
-        public Person()
-        {
-        }
 
         public override string ToString()
         {
             return $"[#{Id}]: {Name} ";
         }
     }
-
-    /*
-    public enum PersonClassification
-    {
-        Freshman, Sophomore, Junior, Senior
-    }
-    */
 }
