@@ -42,7 +42,11 @@ namespace App.StudentManagement.Helpers
             Console.WriteLine("[2] List all courses");
             Console.WriteLine("[3] Search for a course");
             Console.WriteLine("[4] Update a course");
-            Console.WriteLine("[5] Remove a student from a course");
+            Console.WriteLine("[5] Add a student to a course");
+            Console.WriteLine("[6] Remove a student from a course");
+            Console.WriteLine("[7] Add an assignment to a course");
+            Console.WriteLine("[8] Update an assignment");
+            Console.WriteLine("[9] Remove an assignment from a course");
             Console.WriteLine("Enter option number:");
         }
     }

@@ -43,8 +43,8 @@ namespace Library.StudentManagement.Services
 
         public IEnumerable<Course> Search(string query)
         {
-            //Can alternatively use List<Person> and add a .ToList() in place of IEnumerable, but this will create a deep copy.
-            return courseList.Where(s => s.Name.ToUpper().Contains(query.ToUpper()));
+            return courseList.Where(s => s.Code.ToUpper().Contains(query.ToUpper())
+                             || s.Name.ToUpper().Contains(query.ToUpper()));
         }
 
     }
