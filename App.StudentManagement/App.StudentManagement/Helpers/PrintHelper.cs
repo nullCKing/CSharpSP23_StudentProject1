@@ -12,7 +12,7 @@ namespace App.StudentManagement.Helpers
         {
             Console.WriteLine("");
             Console.WriteLine("[0] Exit");
-            Console.WriteLine("[1] Manage student data");
+            Console.WriteLine("[1] Manage person data");
             Console.WriteLine("[2] Manage course data");
             Console.WriteLine("");
             Console.WriteLine("Enter option number:");
@@ -24,15 +24,15 @@ namespace App.StudentManagement.Helpers
                     return result;
                 }
             }
-            return 1;   //Default to student data for now if user enters something unexpected.
+            return 1;   //Default to person data for now if user enters something unexpected.
         }
 
-        public static void StudentPrint()
+        public static void PersonPrint()
         {
-            Console.WriteLine("[1] Add student to registry");
-            Console.WriteLine("[2] List all students");
-            Console.WriteLine("[3] Search for a student");
-            Console.WriteLine("[4] Update a student");
+            Console.WriteLine("[1] Add person to registry");
+            Console.WriteLine("[2] List all persons");
+            Console.WriteLine("[3] Search for a person");
+            Console.WriteLine("[4] Update a person");
             Console.WriteLine("Enter option number:");
         }
 
@@ -42,8 +42,8 @@ namespace App.StudentManagement.Helpers
             Console.WriteLine("[2] List all courses");
             Console.WriteLine("[3] Search for a course");
             Console.WriteLine("[4] Update a course");
-            Console.WriteLine("[5] Add a student to a course");
-            Console.WriteLine("[6] Remove a student from a course");
+            Console.WriteLine("[5] Add a person to a course");
+            Console.WriteLine("[6] Remove a person from a course");
             Console.WriteLine("[7] Add an assignment to a course");
             Console.WriteLine("[8] Update an assignment");
             Console.WriteLine("[9] Remove an assignment from a course");

@@ -9,7 +9,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            var studentHelper = new StudentHelper();
+            var personHelper = new PersonHelper();
             var courseHelper = new CourseHelper();
             bool continueMenu = true;
             while (continueMenu)
@@ -17,25 +17,25 @@ namespace MyApp // Note: actual namespace depends on the project name.
                 var displayResult = PrintHelper.ConsolePrint();
                 if (displayResult == 1)
                 {
-                    PrintHelper.StudentPrint();
+                    PrintHelper.PersonPrint();
                     var input = Console.ReadLine();
                     if (int.TryParse(input, out int result))
                     {
                         if (result == 1)
                         {
-                            studentHelper.CreateStudent();
+                            personHelper.CreatePerson();
                         }
                         else if (result == 2)
                         {
-                            studentHelper.ListAllStudents();
+                            personHelper.ListAllPersons();
                         }
                         else if (result == 3)
                         {
-                            studentHelper.SearchStudent();
+                            personHelper.SearchPerson();
                         }
                         else if (result == 4)
                         {
-                            studentHelper.UpdateStudent();
+                            personHelper.UpdatePerson();
                         }
                     }
                 }
@@ -63,11 +63,11 @@ namespace MyApp // Note: actual namespace depends on the project name.
                         }
                         else if (result == 5)
                         {
-                            courseHelper.AddStudent();
+                            courseHelper.AddPerson();
                         }
                         else if (result == 6)
                         {
-                            courseHelper.RemoveStudent();
+                            courseHelper.RemovePerson();
                         }
                         else if (result == 7)
                         {

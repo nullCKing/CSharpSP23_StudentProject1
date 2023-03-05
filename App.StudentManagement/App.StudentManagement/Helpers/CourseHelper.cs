@@ -13,11 +13,11 @@ namespace App.StudentManagement.Helpers
     public class CourseHelper
     {
         private CourseService courseService;
-        private StudentService studentService;
+        private PersonService personService;
 
         public CourseHelper() 
         {
-            studentService = StudentService.Current;
+            personService = PersonService.Current;
             courseService = CourseService.Current;
         }
 
@@ -140,17 +140,17 @@ namespace App.StudentManagement.Helpers
             }
         }
 
-        public void AddStudent()
+        public void AddPerson()
         {
-            Console.WriteLine("Enter the code for the course to add the student to:");
+            Console.WriteLine("Enter the code for the course to add the person to:");
             courseService.Courses.ForEach(Console.WriteLine);
             var selection = Console.ReadLine();
 
             var selectedCourse = courseService.Courses.FirstOrDefault(s => s.Code.Equals(selection, StringComparison.InvariantCultureIgnoreCase));
             if (selectedCourse != null)
             {
-                studentService.Students.Where(s => !selectedCourse.Roster.Any(s2 => s2.Id == s.Id)).ToList().ForEach(Console.WriteLine);
-                if (studentService.Students.Any(s => !selectedCourse.Roster.Any(s2 => s2.Id == s.Id)))
+                personService.Persons.Where(s => !selectedCourse.Roster.Any(s2 => s2.Id == s.Id)).ToList().ForEach(Console.WriteLine);
+                if (personService.Persons.Any(s => !selectedCourse.Roster.Any(s2 => s2.Id == s.Id)))
                 {
                     selection = Console.ReadLine() ?? string.Empty;
                 }
@@ -158,20 +158,20 @@ namespace App.StudentManagement.Helpers
                 if (selection != null)
                 {
                     var selectedId = int.Parse(selection);
-                    var selectedStudent = studentService.Students.FirstOrDefault(s => s.Id == selectedId);
-                    if (selectedStudent != null)
+                    var selectedPerson = personService.Persons.FirstOrDefault(s => s.Id == selectedId);
+                    if (selectedPerson != null)
                     {
-                        selectedCourse.Roster.Add(selectedStudent);
+                        selectedCourse.Roster.Add(selectedPerson);
                     }
                 }
 
             }
         }
-        public void RemoveStudent()
+        public void RemovePerson()
         {
             Console.WriteLine("Now listing all courses:");
             courseService.Courses.ForEach(Console.WriteLine);
-            Console.WriteLine("Please enter the code for the course from which you'd like to remove a student (numeric values only):");
+            Console.WriteLine("Please enter the code for the course from which you'd like to remove a person (numeric values only):");
 
             var courseSelection = Console.ReadLine();
 
@@ -180,23 +180,23 @@ namespace App.StudentManagement.Helpers
                 var selectedCourse = courseService.Courses.FirstOrDefault(c => c.Code == courseSelectionInt.ToString());
                 if (selectedCourse != null)
                 {
-                    Console.WriteLine("Now listing all students enrolled in this course:");
+                    Console.WriteLine("Now listing all persons enrolled in this course:");
                     selectedCourse.Roster.ForEach(Console.WriteLine);
-                    Console.WriteLine("Please enter the ID of the student you'd like to remove (numeric values only):");
+                    Console.WriteLine("Please enter the ID of the person you'd like to remove (numeric values only):");
 
-                    var studentSelection = Console.ReadLine();
+                    var personSelection = Console.ReadLine();
 
-                    if (int.TryParse(studentSelection, out int studentSelectionInt))
+                    if (int.TryParse(personSelection, out int personSelectionInt))
                     {
-                        var selectedStudent = studentService.Students.FirstOrDefault(s => s.Id == studentSelectionInt);
-                        if (selectedStudent != null)
+                        var selectedPerson = personService.Persons.FirstOrDefault(s => s.Id == personSelectionInt);
+                        if (selectedPerson != null)
                         {
-                            selectedCourse.Roster.Remove(selectedStudent);
-                            Console.WriteLine("Student successfully removed from the course.");
+                            selectedCourse.Roster.Remove(selectedPerson);
+                            Console.WriteLine("Person successfully removed from the course.");
                         }
                         else
                         {
-                            Console.WriteLine("Student not found.");
+                            Console.WriteLine("Person not found.");
                         }
                     }
                 }
@@ -266,13 +266,13 @@ namespace App.StudentManagement.Helpers
         }
         private void SetupRoster(Course c)
         {
-            Console.WriteLine("Which students should be enrolled in this course? ('Q' to quit)");
+            Console.WriteLine("Which persons should be enrolled in this course? ('Q' to quit)");
             bool continueAdding = true;
             while (continueAdding)
             {
-                studentService.Students.Where(s => !c.Roster.Any(s2 => s2.Id == s.Id)).ToList().ForEach(Console.WriteLine);
+                personService.Persons.Where(s => !c.Roster.Any(s2 => s2.Id == s.Id)).ToList().ForEach(Console.WriteLine);
                 var selection = "Q";
-                if (studentService.Students.Any(s => !c.Roster.Any(s2 => s2.Id == s.Id)))
+                if (personService.Persons.Any(s => !c.Roster.Any(s2 => s2.Id == s.Id)))
                 {
                     selection = Console.ReadLine() ?? string.Empty;
                 }
@@ -284,11 +284,11 @@ namespace App.StudentManagement.Helpers
                 else
                 {
                     var selectedId = int.Parse(selection);
-                    var selectedStudent = studentService.Students.FirstOrDefault(s => s.Id == selectedId);
+                    var selectedPerson = personService.Persons.FirstOrDefault(s => s.Id == selectedId);
 
-                    if (selectedStudent != null)
+                    if (selectedPerson != null)
                     {
-                        c.Roster.Add(selectedStudent);
+                        c.Roster.Add(selectedPerson);
                     }
                 }
             }

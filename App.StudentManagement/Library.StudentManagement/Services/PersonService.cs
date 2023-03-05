@@ -8,44 +8,44 @@ using Library.StudentManagement.Models;
 
 namespace Library.StudentManagement.Services
 {
-    public class StudentService
+    public class PersonService
     {
-        private List<Student> studentList;
+        private List<Person> personList;
 
-        private static StudentService? _instance;
+        private static PersonService? _instance;
 
-        private StudentService()
+        private PersonService()
         {
-            studentList = new List<Student>();
+            personList = new List<Person>();
         }
 
-        public static StudentService Current
+        public static PersonService Current
         {
             get
             {
                 if (_instance == null)
                 {
-                    _instance = new StudentService();
+                    _instance = new PersonService();
                 }
                 return _instance;
             }
         }
 
 
-        public void Add(Student student)
+        public void Add(Person person)
         {
-            studentList.Add(student);
+            personList.Add(person);
         }
 
-        public List<Student> Students
+        public List<Person> Persons
         {
-            get { return studentList; }
+            get { return personList; }
         }
 
-        public IEnumerable<Student> Search(string query)
+        public IEnumerable<Person> Search(string query)
         {
             //Can alternatively use List<Person> and add a .ToList() in place of IEnumerable, but this will create a deep copy.
-            return studentList.Where(s => s.Name.ToUpper().Contains(query.ToUpper()));
+            return personList.Where(s => s.Name.ToUpper().Contains(query.ToUpper()));
         }
 
     }
