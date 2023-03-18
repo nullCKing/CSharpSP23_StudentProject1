@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using Library.StudentManagement.Models;
 using Library.StudentManagement.Services;
+using MyApp;
 
 namespace App.StudentManagement.Helpers
 {
@@ -14,12 +15,13 @@ namespace App.StudentManagement.Helpers
 
         private PersonService personService;
         private CourseService courseService;
+        private ListNavigator<Person> personNavigator;
         public PersonHelper()
         {
             personService = PersonService.Current;
             courseService = CourseService.Current;
+            personNavigator = new ListNavigator<Person>(personService.Persons, 2);
         }
-
 
         public List<Person> Persons
         {
@@ -106,34 +108,6 @@ namespace App.StudentManagement.Helpers
             }
         }
 
-        public void ListAllPersons()
-        {
-            personService.Persons.ForEach(Console.WriteLine);
-
-            Console.WriteLine("Enter the ID of a specific person: ");
-            var selection = Console.ReadLine();
-            var selectionInt = int.Parse(selection ?? "0");
-
-            Console.WriteLine("Person Course List:");
-            courseService.Courses.Where(c => c.Roster.Any(s => s.Id == selectionInt)).ToList().ForEach(Console.WriteLine);
-        }
-
-        public void SearchPerson()
-        {
-            Console.WriteLine("Enter a name to search for:");
-            var query = Console.ReadLine() ?? string.Empty;
-
-            personService.Search(query).ToList().ForEach(Console.WriteLine);
-
-            Console.WriteLine("Enter the ID of a specific person: ");
-            var selection = Console.ReadLine();
-            var selectionInt = int.Parse(selection ?? "0");
-
-
-            Console.WriteLine("Person Course List:");
-            courseService.Courses.Where(c => c.Roster.Any(s => s.Id == selectionInt)).ToList().ForEach(Console.WriteLine);
-        }
-
         public void UpdatePerson()
         {
             Console.WriteLine("Now listing all persons:");
@@ -141,16 +115,86 @@ namespace App.StudentManagement.Helpers
             Console.WriteLine("Please enter the ID for the person you'd like to update (numeric values only):");
 
             var selection = Console.ReadLine();
-            
+
             if (int.TryParse(selection, out int selectionInt))
             {
                 var selectedPerson = personService.Persons.FirstOrDefault(s => s.Id == selectionInt);
-                if(selectedPerson != null)
+                if (selectedPerson != null)
                 {
                     CreatePerson(selectedPerson);
                 }
             }
 
         }
+
+        private void NavigateStudents(string? query = null)
+        {
+            ListNavigator<Person>? currentNavigator = null;
+            if (query == null)
+            {
+                currentNavigator = personNavigator;
+            }
+            else
+            {
+                currentNavigator = new ListNavigator<Person>(personService.Search(query).ToList(), 2);
+            }
+
+            bool keepPaging = true;
+            while (keepPaging)
+            {
+                foreach (var pair in currentNavigator.GetCurrentPage())
+                {
+                    Console.WriteLine($"{pair.Key}. {pair.Value}");
+                }
+
+                if (currentNavigator.HasPreviousPage)
+                {
+                    Console.WriteLine("P. Previous Page");
+                }
+
+                if (currentNavigator.HasNextPage)
+                {
+                    Console.WriteLine("N. Next Page");
+                }
+
+                Console.WriteLine("Make a selection:");
+                var selectionStr = Console.ReadLine();
+
+                if ((selectionStr?.Equals("P", StringComparison.InvariantCultureIgnoreCase) ?? false)
+                    || (selectionStr?.Equals("N", StringComparison.InvariantCultureIgnoreCase) ?? false))
+                {
+                    //Navigate through pages
+                    if (selectionStr.Equals("P", StringComparison.InvariantCultureIgnoreCase))
+                    {
+                        currentNavigator.GoBackward();
+                    }
+                    else if (selectionStr.Equals("N", StringComparison.InvariantCultureIgnoreCase))
+                    {
+                        currentNavigator.GoForward();
+                    }
+                }
+                else
+                {
+                    var selectionInt = int.Parse(selectionStr ?? "0");
+
+                    Console.WriteLine("Student Course List:");
+                    courseService.Courses.Where(c => c.Roster.Any(s => s.Id == selectionInt)).ToList().ForEach(Console.WriteLine);
+                    keepPaging = false;
+                }
+            }
+        }
+
+        public void ListStudents()
+        {
+            NavigateStudents();
+        }
+
+        public void SearchStudents()
+        {
+            Console.WriteLine("Enter a query:");
+            var query = Console.ReadLine() ?? string.Empty;
+            NavigateStudents(query);
+        }
+
     }
 }

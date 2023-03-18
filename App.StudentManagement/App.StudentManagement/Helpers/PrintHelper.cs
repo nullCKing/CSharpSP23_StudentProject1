@@ -53,6 +53,10 @@ namespace App.StudentManagement.Helpers
             Console.WriteLine("[13] Add an announcement");
             Console.WriteLine("[14] Update an announcement");
             Console.WriteLine("[15] Remove an announcement");
+            Console.WriteLine("[16] Create an assignment group");
+            Console.WriteLine("[17] Remove an assignment group");
+            Console.WriteLine("[18] Grade a student assignment");
+            Console.WriteLine("[19] Display grade percentages of roster");
             Console.WriteLine("Enter option number:");
         }
     }

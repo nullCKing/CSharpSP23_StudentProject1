@@ -10,6 +10,8 @@ namespace Library.StudentManagement.Models
     {
         public Dictionary<int, double> Grades { get; set; }
 
+        public float ? GPA { get; set; }
+
         public string? Classification { get; set; }
 
         public Student() 

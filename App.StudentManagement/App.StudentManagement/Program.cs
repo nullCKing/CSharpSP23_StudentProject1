@@ -27,11 +27,11 @@ namespace MyApp // Note: actual namespace depends on the project name.
                         }
                         else if (result == 2)
                         {
-                            personHelper.ListAllPersons();
+                            personHelper.ListStudents();
                         }
                         else if (result == 3)
                         {
-                            personHelper.SearchPerson();
+                            personHelper.SearchStudents();
                         }
                         else if (result == 4)
                         {
@@ -104,6 +104,22 @@ namespace MyApp // Note: actual namespace depends on the project name.
                         else if (result == 15)
                         {
                             courseHelper.RemoveAnnouncement();
+                        }
+                        else if (result == 16)
+                        {
+                            courseHelper.AddAssignmentGroup();
+                        }
+                        else if (result == 17)
+                        {
+                            courseHelper.RemoveAssignmentGroup();
+                        }
+                        else if (result == 18)
+                        {
+                            courseHelper.AddGrade();
+                        }
+                        else if (result == 19)
+                        {
+                            courseHelper.CalculateWeightedGrades();
                         }
                     }
                 }
