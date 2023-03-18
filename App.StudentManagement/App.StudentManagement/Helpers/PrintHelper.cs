@@ -47,6 +47,12 @@ namespace App.StudentManagement.Helpers
             Console.WriteLine("[7] Add an assignment to a course");
             Console.WriteLine("[8] Update an assignment");
             Console.WriteLine("[9] Remove an assignment from a course");
+            Console.WriteLine("[10] Add module to a course");
+            Console.WriteLine("[11] Update a course module");
+            Console.WriteLine("[12] Remove a course module");
+            Console.WriteLine("[13] Add an announcement");
+            Console.WriteLine("[14] Update an announcement");
+            Console.WriteLine("[15] Remove an announcement");
             Console.WriteLine("Enter option number:");
         }
     }

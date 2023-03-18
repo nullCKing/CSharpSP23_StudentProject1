@@ -81,6 +81,30 @@ namespace MyApp // Note: actual namespace depends on the project name.
                         {
                             courseHelper.RemoveAssignment();
                         }
+                        else if (result == 10)
+                        {
+                            courseHelper.AddModule();
+                        }
+                        else if (result == 11)
+                        {
+                            courseHelper.UpdateModule();
+                        }
+                        else if (result == 12)
+                        {
+                            courseHelper.RemoveModule();
+                        }
+                        else if (result == 13)
+                        {
+                            courseHelper.AddAnouncement();
+                        }
+                        else if (result == 14)
+                        {
+                            courseHelper.UpdateAnnouncement();
+                        }
+                        else if (result == 15)
+                        {
+                            courseHelper.RemoveAnnouncement();
+                        }
                     }
                 }
                 else

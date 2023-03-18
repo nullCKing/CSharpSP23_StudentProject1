@@ -35,7 +35,7 @@ namespace App.StudentManagement.Helpers
             if (selectedPerson == null)
             {
                 isCreated = true;
-                Console.WriteLine("Would you like to add: [1] Person | [2] Teaching Assistant | [3] Instructor");
+                Console.WriteLine("Would you like to add: [1] Student | [2] Teaching Assistant | [3] Instructor");
                 var personSelection = Console.ReadLine() ?? string.Empty;
                 int personInt = 1;
 
@@ -71,7 +71,7 @@ namespace App.StudentManagement.Helpers
 
                 while (!int.TryParse(classification, out classificationInt) || (classificationInt > 4) || (classificationInt < 1))
                 {
-                    Console.WriteLine("Please re-enter person year/classification using only numeric values within the range of 1-4:");
+                    Console.WriteLine("Please re-enter student year/classification using only numeric values within the range of 1-4:");
                     classification = Console.ReadLine() ?? string.Empty;
                 }
 
@@ -98,26 +98,10 @@ namespace App.StudentManagement.Helpers
                 studentRecord.Classification = classification;
             }
 
-            Random random = new Random();
-            int minValue = 1000;
-            int maxValue = 9999;
-            int assignedID = 0;
-
-            while (true)
-            {
-                int randomId = random.Next(minValue, maxValue);
-                if (!personService.Persons.Any(s => s.Id == randomId))
-                {
-                    assignedID = randomId;
-                    break;
-                }
-            }
-
             selectedPerson.Name = name ?? string.Empty;
 
             if (isCreated)
             {
-                selectedPerson.Id = assignedID;
                 personService.Add(selectedPerson);
             }
         }

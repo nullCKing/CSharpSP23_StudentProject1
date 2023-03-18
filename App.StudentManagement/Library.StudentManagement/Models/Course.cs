@@ -8,12 +8,13 @@
 
         public List<Person> Roster { get; set; }
         public List<Assignment> Assignments { get; set; }
+        public List<Announcement> Announcements { get; set; }
         public List<Module> Modules { get; set; }
-
         public Course()
         {
             Roster = new List<Person>();
             Assignments = new List<Assignment>();
+            Announcements = new List<Announcement>();
             Modules = new List<Module>();
         }
 
