@@ -1,0 +1,20 @@
+﻿<Window x:Class="WPF.StudentManagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF.StudentManagement"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Visibility="Collapsed" Grid.Column="0" Grid.Row="0"/>
+        <StackPanel x:Name="MainMenu" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0">
+            <TextBlock Text="Main Menu" FontWeight="Bold" FontSize="24" Margin="0,0,0,10" TextAlignment="Center"/>
+            <TextBlock Text="Are you a Student, TA, or Instructor?" FontSize="15" Margin="0,0,0,10" TextAlignment="Center"/>
+            <Button Name="StudentButton" Content="Student" Click="StudentButton_Click" Margin="0,0,0,10"/>
+            <Button Name="InstructorButton" Content="Instructor" Click="InstructorButton_Click" Margin="0,0,0,10"/>
+            <Button Name="TAButton" Content="TA" Click="InstructorButton_Click" Margin="0,0,0,10"/>
+            <Button Name="ExitButton" Content="Exit" Click="ExitButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

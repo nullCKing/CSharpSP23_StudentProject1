@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "WPF.StudentManagement/1.0.0": {
+        "dependencies": {
+          "App.StudentManagement": "1.0.0",
+          "Library.StudentManagement": "1.0.0"
+        },
+        "runtime": {
+          "WPF.StudentManagement.dll": {}
+        }
+      },
+      "App.StudentManagement/1.0.0": {
+        "dependencies": {
+          "Library.StudentManagement": "1.0.0"
+        },
+        "runtime": {
+          "App.StudentManagement.dll": {}
+        }
+      },
+      "Library.StudentManagement/1.0.0": {
+        "runtime": {
+          "Library.StudentManagement.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WPF.StudentManagement/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "App.StudentManagement/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Library.StudentManagement/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.StudentManagement", "App.StudentManagement\App.StudentManagement.csproj", "{81C830ED-5EF7-4DF2-87ED-71A71CE40C61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.StudentManagement", "App.StudentManagement\App.StudentManagement.csproj", "{81C830ED-5EF7-4DF2-87ED-71A71CE40C61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.StudentManagement", "Library.StudentManagement\Library.StudentManagement.csproj", "{8116C114-A301-470D-B18F-78FBC45943D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.StudentManagement", "Library.StudentManagement\Library.StudentManagement.csproj", "{8116C114-A301-470D-B18F-78FBC45943D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.StudentManagement", "WPF.StudentManagement\WPF.StudentManagement.csproj", "{1A19EC1F-8C1F-4143-B9D6-8FF9FC8E856C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8116C114-A301-470D-B18F-78FBC45943D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8116C114-A301-470D-B18F-78FBC45943D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8116C114-A301-470D-B18F-78FBC45943D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A19EC1F-8C1F-4143-B9D6-8FF9FC8E856C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A19EC1F-8C1F-4143-B9D6-8FF9FC8E856C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A19EC1F-8C1F-4143-B9D6-8FF9FC8E856C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A19EC1F-8C1F-4143-B9D6-8FF9FC8E856C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
