@@ -25,12 +25,16 @@ namespace WPF.StudentManagement
 
         private void PersonButton_Click(object sender, RoutedEventArgs e)
         {
-            // Navigate to a new PersonWindow to handle person-related actions
+            //InstructorPageFrame.Content = new InstructorStudentData();
+            InstructorMenuContent.Visibility = Visibility.Collapsed;
+            InstructorPageFrame.Visibility = Visibility.Visible;
         }
 
         private void CourseButton_Click(object sender, RoutedEventArgs e)
         {
-            // Navigate to a new CourseWindow to handle course-related actions
+            InstructorPageFrame.Content = new InstructorCourseData();
+            InstructorMenuContent.Visibility = Visibility.Collapsed;
+            InstructorPageFrame.Visibility = Visibility.Visible;
         }
     }
 }

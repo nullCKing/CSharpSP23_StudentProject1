@@ -7,21 +7,21 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="LandingPage.xaml.cs">
+    <Compile Update="Instructor Pages\InstructorCourseData.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="LandingPage.xaml">
+    <Page Update="Instructor Pages\InstructorCourseData.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="StudentNavPage.xaml">
+    <Page Update="Student Pages\StudentNavPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="StudentLoginPage.xaml">
+    <Page Update="Student Pages\StudentLoginPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="InstructorPage.xaml">
+    <Page Update="Instructor Pages\InstructorPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

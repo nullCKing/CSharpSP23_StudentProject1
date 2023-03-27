@@ -12,4 +12,9 @@
     <ProjectReference Include="..\Library.StudentManagement\Library.StudentManagement.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Instructor Pages\Course Models\" />
+    <Folder Include="Instructor Pages\Student\" />
+  </ItemGroup>
+
 </Project>

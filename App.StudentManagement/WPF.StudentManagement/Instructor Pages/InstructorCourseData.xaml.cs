@@ -24,5 +24,15 @@ namespace WPF.StudentManagement
         {
             InitializeComponent();
         }
+
+        private void CreateCourseButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Remove the code related to the InstructorCourseFrame frame for now
+        }
+
+        private void ListAllCoursesButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Remove the code related to the InstructorCourseFrame frame for now
+        }
     }
 }

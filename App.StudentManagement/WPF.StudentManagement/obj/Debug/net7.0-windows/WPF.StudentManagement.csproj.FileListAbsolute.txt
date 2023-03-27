@@ -27,11 +27,11 @@ C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF
 C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF.StudentManagement\obj\Debug\net7.0-windows\WPF.StudentManagement.pdb
 C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF.StudentManagement\obj\Debug\net7.0-windows\WPF.StudentManagement.genruntimeconfig.cache
 C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF.StudentManagement\obj\Debug\net7.0-windows\ref\WPF.StudentManagement.dll
-C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF.StudentManagement\obj\Debug\net7.0-windows\InstructorPage.g.cs
-C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF.StudentManagement\obj\Debug\net7.0-windows\InstructorPage.baml
-C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF.StudentManagement\obj\Debug\net7.0-windows\LandingPage.g.cs
-C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF.StudentManagement\obj\Debug\net7.0-windows\LandingPage.baml
-C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF.StudentManagement\obj\Debug\net7.0-windows\StudentLoginPage.g.cs
-C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF.StudentManagement\obj\Debug\net7.0-windows\StudentNavPage.g.cs
-C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF.StudentManagement\obj\Debug\net7.0-windows\StudentLoginPage.baml
-C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF.StudentManagement\obj\Debug\net7.0-windows\StudentNavPage.baml
+C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF.StudentManagement\obj\Debug\net7.0-windows\Instructor Pages\InstructorCourseData.g.cs
+C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF.StudentManagement\obj\Debug\net7.0-windows\Instructor Pages\InstructorPage.g.cs
+C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF.StudentManagement\obj\Debug\net7.0-windows\Student Pages\StudentLoginPage.g.cs
+C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF.StudentManagement\obj\Debug\net7.0-windows\Student Pages\StudentNavPage.g.cs
+C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF.StudentManagement\obj\Debug\net7.0-windows\Instructor Pages\InstructorCourseData.baml
+C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF.StudentManagement\obj\Debug\net7.0-windows\Instructor Pages\InstructorPage.baml
+C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF.StudentManagement\obj\Debug\net7.0-windows\Student Pages\StudentLoginPage.baml
+C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF.StudentManagement\obj\Debug\net7.0-windows\Student Pages\StudentNavPage.baml

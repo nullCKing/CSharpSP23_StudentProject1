@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,12 +11,12 @@ using MyApp;
 
 namespace App.StudentManagement.Helpers
 {
-    internal class PersonHelper
+    public class PersonHelper
     {
-
         private PersonService personService;
         private CourseService courseService;
         private ListNavigator<Person> personNavigator;
+
         public PersonHelper()
         {
             personService = PersonService.Current;
@@ -23,14 +24,14 @@ namespace App.StudentManagement.Helpers
             personNavigator = new ListNavigator<Person>(personService.Persons, 2);
         }
 
-        public List<Person> Persons
+        public ObservableCollection<Person> Persons
         {
             get
             {
-                return personService.Persons.ToList();
+                return new ObservableCollection<Person>(personService.Persons.ToList());
             }
         }
-        
+
         public void CreatePerson(Person? selectedPerson = null)
         {
             bool isCreated = false;

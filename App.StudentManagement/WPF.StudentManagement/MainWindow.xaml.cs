@@ -23,6 +23,7 @@ namespace WPF.StudentManagement
             InitializeComponent();
         }
 
+
         private void StudentButton_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.Content = new StudentLoginPage();

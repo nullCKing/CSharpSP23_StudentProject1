@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\WPF.StudentManagement\App.xaml
-5434303822
+51365843127
 
-71644871967
+8767159806
 2001983832609
-InstructorPage.xaml;LandingPage.xaml;MainWindow.xaml;StudentLoginPage.xaml;StudentNavPage.xaml;
+Instructor Pages\InstructorCourseData.xaml;Instructor Pages\InstructorPage.xaml;MainWindow.xaml;Student Pages\StudentLoginPage.xaml;Student Pages\StudentNavPage.xaml;
 
 False
 

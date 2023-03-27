@@ -7,8 +7,11 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="InstructorCourseData">
-
     <Grid>
-        
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Course Controls" FontWeight="Bold" FontSize="24" Margin="0,0,0,10" TextAlignment="Center"/>
+            <Button Name="CreateCourseButton" Content="Create Course" Click="CreateCourseButton_Click" Margin="0,0,0,10"/>
+            <Button Name="ListAllCoursesButton" Content="List All Courses / Modify Courses" Click="ListAllCoursesButton_Click" Margin="0,0,0,10"/>
+        </StackPanel>
     </Grid>
 </Page>
