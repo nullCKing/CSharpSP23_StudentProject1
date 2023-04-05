@@ -80,9 +80,10 @@ namespace App.StudentManagement.Helpers
 
                 classificationInt = int.Parse(classification);
 
+                /*
                 if (classificationInt == 2)
                 {
-                    classification = "Sophomore";
+                    classification = Sophomore;
                 }
                 else if (classificationInt == 3)
                 {
@@ -99,6 +100,7 @@ namespace App.StudentManagement.Helpers
 
                 var studentRecord = selectedPerson as Student;
                 studentRecord.Classification = classification;
+                */
             }
 
             selectedPerson.Name = name ?? string.Empty;
