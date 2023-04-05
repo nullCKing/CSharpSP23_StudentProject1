@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui.StudentManagement.Views.CourseDetailView"
+             Title="CourseDetailView">
+    <VerticalStackLayout>
+        <Label 
+            Text="Name"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry Text="{Binding Path=Name, Mode=TwoWay}"></Entry>
+
+        <Label 
+            Text="Code"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry Text="{Binding Path=Code, Mode=TwoWay}"></Entry>
+
+        <Label 
+            Text="Description"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry Text="{Binding Path=Description, Mode=TwoWay}"></Entry>
+        
+        <Button
+            Text="Ok"
+            Clicked="OkClick"
+            Width ="200"/>
+    </VerticalStackLayout>
+</ContentPage>

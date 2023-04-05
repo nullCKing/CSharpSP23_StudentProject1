@@ -40,14 +40,9 @@
                     Grid.Row="1"
                     Grid.Column="0"/>
             <Button x:Name="InstructorButton"
-                    Text="Instructor"
+                    Text="Instructor or TA"
                     Clicked="InstructorButton_Click"
                     Grid.Row="2"
-                    Grid.Column="0"/>
-            <Button x:Name="TAButton"
-                    Text="TA"
-                    Clicked="TAButton_Click"
-                    Grid.Row="3"
                     Grid.Column="0"/>
             <Button x:Name="ExitButton"
                     Text="Exit"

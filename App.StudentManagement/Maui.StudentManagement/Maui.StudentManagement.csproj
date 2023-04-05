@@ -57,7 +57,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\CourseDetailView.xaml.cs">
+	    <DependentUpon>CourseDetailView.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Views\InstructorView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\CourseDetailView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\PersonDetailView.xaml">

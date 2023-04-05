@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace Maui.StudentManagement.ViewModels
 {
-    public class PersonDetailViewModel
+    public class CourseDetailViewModel
     {
         public string Name { get; set; }
-        public string ClassificationString { get; set; }
+        public string Code { get; set; }
+        public string Description { get; set; }
+
     }
 }

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Maui.Controls;
 using Microsoft.Maui.Graphics;
-using MAUI.LearningManagement.ViewModels;
+using Maui.StudentManagement.ViewModels;
 using System;
 
 namespace Maui.StudentManagement
@@ -20,7 +20,7 @@ namespace Maui.StudentManagement
 
         private void InstructorButton_Click(object sender, EventArgs e)
         {
-            // Handle the Instructor button click
+            Shell.Current.GoToAsync("//Instructor");
         }
 
         private void TAButton_Click(object sender, EventArgs e)

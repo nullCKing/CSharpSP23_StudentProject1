@@ -1,8 +1,8 @@
 using Library.StudentManagement.Models;
 using Library.StudentManagement.Services;
-using MAUI.LearningManagement.ViewModels;
+using Maui.StudentManagement.ViewModels;
 
-namespace MAUI.LearningManagement.Views;
+namespace Maui.StudentManagement.Views;
 
 public partial class PersonDetailView : ContentPage
 {
