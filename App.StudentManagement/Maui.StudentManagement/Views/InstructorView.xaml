@@ -4,8 +4,9 @@
     <ContentPage.Content>
         <Grid>
             <ListView x:Name="ButtonListView"
-                      HorizontalOptions="Center"
-                      VerticalOptions="Center">
+              HorizontalOptions="Center"
+              VerticalOptions="Center"
+              ItemsSource="{Binding ButtonModels}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
