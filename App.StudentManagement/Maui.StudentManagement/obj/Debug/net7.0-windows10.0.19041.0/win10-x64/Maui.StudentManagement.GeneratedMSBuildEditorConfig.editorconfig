@@ -58,6 +58,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Maui.StudentManagement.Vie
 build_metadata.AdditionalFiles.TargetPath = Views\PersonDetailView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\PersonDetailView.xaml
 
+[C:/Users/chris/source/repos/CSharpSP23_StudentProject1/App.StudentManagement/Maui.StudentManagement/Views/StudentListView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Maui.StudentManagement.Views.StudentListView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\StudentListView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\StudentListView.xaml
+
 [C:/Users/chris/source/repos/CSharpSP23_StudentProject1/App.StudentManagement/Maui.StudentManagement/Views/StudentView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.StudentManagement.Views.StudentView.xaml

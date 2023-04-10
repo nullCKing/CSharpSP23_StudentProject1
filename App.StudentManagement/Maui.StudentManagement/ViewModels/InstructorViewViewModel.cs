@@ -40,64 +40,54 @@ namespace Maui.StudentManagement.ViewModels
 
         public ObservableCollection<ButtonModel> ButtonModels { get; private set; }
 
-        public ICommand CreateCourseCommand => new Command(CreateCourse);
-
         public event PropertyChangedEventHandler PropertyChanged;
 
         public InstructorViewViewModel()
         {
-            ButtonModels = new ObservableCollection<ButtonModel>
+            ButtonModels = InitializeButtonModels();
+        }
+
+        private ObservableCollection<ButtonModel> InitializeButtonModels()
+        {
+            return new ObservableCollection<ButtonModel>
             {
-                new ButtonModel("Create Course", (ICommand)new Command(CreateCourse_Clicked)),
-                new ButtonModel("List All Courses", (ICommand)new Command(ListAllCourses_Clicked)),
-                new ButtonModel("Search Course", (ICommand)new Command(SearchCourse_Clicked)),
-                new ButtonModel("Update Course", (ICommand)new Command(UpdateCourse_Clicked)),
-                new ButtonModel("Add Student", (ICommand)new Command(AddPerson_Clicked)),
-                new ButtonModel("Remove Person", (ICommand)new Command(RemovePerson_Clicked)),
-                new ButtonModel("Add Assignment", (ICommand)new Command(AddAssignment_Clicked)),
-                new ButtonModel("Update Assignment", (ICommand)new Command(UpdateAssignment_Clicked)),
-                new ButtonModel("Remove Assignment", (ICommand)new Command(RemoveAssignment_Clicked)),
-                new ButtonModel("Add Module", (ICommand)new Command(AddModule_Clicked)),
-                new ButtonModel("Update Module", (ICommand)new Command(UpdateModule_Clicked)),
-                new ButtonModel("Remove Module", (ICommand)new Command(RemoveModule_Clicked)),
-                new ButtonModel("Add Announcement", (ICommand)new Command(AddAnnouncement_Clicked)),
-                new ButtonModel("Update Announcement", (ICommand)new Command(UpdateAnnouncement_Clicked)),
-                new ButtonModel("Remove Announcement", (ICommand)new Command(RemoveAnnouncement_Clicked)),
-                new ButtonModel("Add Assignment Group", (ICommand)new Command(AddAssignmentGroup_Clicked)),
-                new ButtonModel("Remove Assignment Group", (ICommand)new Command(RemoveAssignmentGroup_Clicked)),
-                new ButtonModel("Add Grade", (ICommand)new Command(AddGrade_Clicked)),
-                new ButtonModel("Calculate Weighted Grades", (ICommand)new Command(CalculateWeightedGrades_Clicked))
-
+                CreateButtonModel("Create Course", CreateCourse_Clicked),
+                CreateButtonModel("List All Courses", ListAllCourses_Clicked),
+                CreateButtonModel("Add Student", AddPerson_Clicked),
+                CreateButtonModel("Remove Person", RemovePerson_Clicked),
+                CreateButtonModel("List all students", ListAllStudents_Clicked),
+                CreateButtonModel("Add Assignment", AddAssignment_Clicked),
+                CreateButtonModel("Update Assignment", UpdateAssignment_Clicked),
+                CreateButtonModel("Remove Assignment", RemoveAssignment_Clicked),
+                CreateButtonModel("Add Module", AddModule_Clicked),
+                CreateButtonModel("Update Module", UpdateModule_Clicked),
+                CreateButtonModel("Remove Module", RemoveModule_Clicked),
+                CreateButtonModel("Add Announcement", AddAnnouncement_Clicked),
+                CreateButtonModel("Update Announcement", UpdateAnnouncement_Clicked),
+                CreateButtonModel("Remove Announcement", RemoveAnnouncement_Clicked),
+                CreateButtonModel("Add Assignment Group", AddAssignmentGroup_Clicked),
+                CreateButtonModel("Remove Assignment Group", RemoveAssignmentGroup_Clicked),
+                CreateButtonModel("Add Grade", AddGrade_Clicked),
+                CreateButtonModel("Calculate Weighted Grades", CalculateWeightedGrades_Clicked)
             };
-
         }
 
-        private void CreateCourse()
+        private ButtonModel CreateButtonModel(string text, Action action)
         {
-           
+            return new ButtonModel(text, new Command(action));
         }
 
-        private void CreateCourse_Clicked()
+        public void CreateCourse_Clicked()
         {
-
+            Shell.Current.GoToAsync("//CourseModifier");
         }
 
         private void ListAllCourses_Clicked()
         {
-           
-        }
-
-        private void SearchCourse_Clicked()
-        {
-           
-        }
-
-        private void UpdateCourse_Clicked()
-        {
             
         }
 
-        private void AddPerson_Clicked()
+        public void AddPerson_Clicked()
         {
             Shell.Current.GoToAsync("//StudentModifier");
         }
@@ -105,6 +95,11 @@ namespace Maui.StudentManagement.ViewModels
         private void RemovePerson_Clicked()
         {
             
+        }
+
+        private void ListAllStudents_Clicked()
+        {
+            Shell.Current.GoToAsync("//StudentList");
         }
 
         private void AddAssignment_Clicked()

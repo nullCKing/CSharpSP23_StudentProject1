@@ -25,6 +25,6 @@
         <Button
             Text="Ok"
             Clicked="OkClick"
-            Width ="200"/>
+            WidthRequest ="200"/>
     </VerticalStackLayout>
 </ContentPage>

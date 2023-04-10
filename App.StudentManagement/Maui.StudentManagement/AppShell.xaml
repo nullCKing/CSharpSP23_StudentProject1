@@ -23,4 +23,12 @@
         Title="Student modification and creation"
         ContentTemplate="{DataTemplate local2:PersonDetailView}"
         Route="StudentModifier" />
+    <ShellContent
+        Title="Course modification and creation"
+        ContentTemplate="{DataTemplate local2:CourseDetailView}"
+        Route="CourseModifier" />
+    <ShellContent
+        Title="Student List"
+        ContentTemplate="{DataTemplate local2:StudentListView}"
+        Route="StudentList" />
 </Shell>
