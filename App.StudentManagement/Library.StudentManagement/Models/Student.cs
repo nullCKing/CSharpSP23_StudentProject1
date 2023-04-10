@@ -10,7 +10,9 @@ namespace Library.StudentManagement.Models
     {
         public Dictionary<int, double> Grades { get; set; }
 
-        public string? Classification { get; set; }
+        public StudentClassification Classification { get; set; }
+
+        public float ? GPA { get; set; }
 
         public Student() 
         {
@@ -19,7 +21,12 @@ namespace Library.StudentManagement.Models
 
         public override string ToString()
         {
-            return $"[#{Id}]: {Name} | {Classification}";
+            return $"[#{Id}]: {Name} {Classification}";
         }
+    }
+
+    public enum StudentClassification
+    {
+        Freshman, Sophomore, Junior, Senior
     }
 }

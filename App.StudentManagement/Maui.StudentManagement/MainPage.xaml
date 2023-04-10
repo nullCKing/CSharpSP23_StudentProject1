@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui.StudentManagement.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Text="Main Menu"
+               Grid.Row="0"
+               FontAttributes="Bold"
+               FontSize="24"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"/>
+
+        <Grid Grid.Row="1"
+              HorizontalOptions="Center"
+              VerticalOptions="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Label Text="Are you a Student, TA, or Instructor?"
+                   FontSize="15"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   HorizontalOptions="Center"/>
+            <Button x:Name="StudentButton"
+                    Text="Student"
+                    Clicked="StudentButton_Click"
+                    Grid.Row="1"
+                    Grid.Column="0"/>
+            <Button x:Name="InstructorButton"
+                    Text="Instructor or TA"
+                    Clicked="InstructorButton_Click"
+                    Grid.Row="2"
+                    Grid.Column="0"/>
+            <Button x:Name="ExitButton"
+                    Text="Exit"
+                    Clicked="ExitButton_Click"
+                    Grid.Row="4"
+                    Grid.Column="0"/>
+        </Grid>
+    </Grid>
+
+</ContentPage>

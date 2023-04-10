@@ -27,11 +27,11 @@ namespace MyApp // Note: actual namespace depends on the project name.
                         }
                         else if (result == 2)
                         {
-                            personHelper.ListAllPersons();
+                            personHelper.ListStudents();
                         }
                         else if (result == 3)
                         {
-                            personHelper.SearchPerson();
+                            personHelper.SearchStudents();
                         }
                         else if (result == 4)
                         {
@@ -80,6 +80,46 @@ namespace MyApp // Note: actual namespace depends on the project name.
                         else if (result == 9)
                         {
                             courseHelper.RemoveAssignment();
+                        }
+                        else if (result == 10)
+                        {
+                            courseHelper.AddModule();
+                        }
+                        else if (result == 11)
+                        {
+                            courseHelper.UpdateModule();
+                        }
+                        else if (result == 12)
+                        {
+                            courseHelper.RemoveModule();
+                        }
+                        else if (result == 13)
+                        {
+                            courseHelper.AddAnouncement();
+                        }
+                        else if (result == 14)
+                        {
+                            courseHelper.UpdateAnnouncement();
+                        }
+                        else if (result == 15)
+                        {
+                            courseHelper.RemoveAnnouncement();
+                        }
+                        else if (result == 16)
+                        {
+                            courseHelper.AddAssignmentGroup();
+                        }
+                        else if (result == 17)
+                        {
+                            courseHelper.RemoveAssignmentGroup();
+                        }
+                        else if (result == 18)
+                        {
+                            courseHelper.AddGrade();
+                        }
+                        else if (result == 19)
+                        {
+                            courseHelper.CalculateWeightedGrades();
                         }
                     }
                 }

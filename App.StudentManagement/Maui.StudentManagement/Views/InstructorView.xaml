@@ -1,0 +1,31 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Maui.StudentManagement.ViewModels"
+             x:Class="Maui.StudentManagement.Views.InstructorView">
+    <ContentPage.Content>
+        <Grid>
+            <ListView x:Name="ButtonListView"
+              HorizontalOptions="Center"
+              VerticalOptions="Center"
+              ItemsSource="{Binding ButtonModels}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid HorizontalOptions="Center">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Button Grid.Row="0" Grid.Column="0" Text="{Binding Text}" Command="{Binding ClickedCommand}" WidthRequest="500" HeightRequest="30" Margin="0,0,0,10"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

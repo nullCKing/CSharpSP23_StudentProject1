@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Maui.StudentManagement.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Maui.StudentManagement"
+    xmlns:local2="clr-namespace:Maui.StudentManagement.Views"
+    Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    <ShellContent
+        Title="Student"
+        ContentTemplate="{DataTemplate local2:StudentView}"
+        Route="Student" />
+    <ShellContent
+        Title="Instructor"
+        ContentTemplate="{DataTemplate local2:InstructorView}"
+        Route="Instructor" />
+    <ShellContent
+        Title="Student modification and creation"
+        ContentTemplate="{DataTemplate local2:PersonDetailView}"
+        Route="StudentModifier" />
+    <ShellContent
+        Title="Course modification and creation"
+        ContentTemplate="{DataTemplate local2:CourseDetailView}"
+        Route="CourseModifier" />
+    <ShellContent
+        Title="Student List"
+        ContentTemplate="{DataTemplate local2:StudentListView}"
+        Route="StudentList" />
+</Shell>
