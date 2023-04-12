@@ -31,4 +31,8 @@
         Title="Student List"
         ContentTemplate="{DataTemplate local2:StudentListView}"
         Route="StudentList" />
+    <ShellContent
+        Title="Course List"
+        ContentTemplate="{DataTemplate local2:CourseListView}"
+        Route="CourseList" />
 </Shell>

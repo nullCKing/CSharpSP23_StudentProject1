@@ -12,6 +12,8 @@ using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Maui.StudentManagement.ViewModels;
 using System.Windows.Input;
+using Maui.StudentManagement.Views;
+
 
 
 namespace Maui.StudentManagement.ViewModels
@@ -77,19 +79,19 @@ namespace Maui.StudentManagement.ViewModels
             return new ButtonModel(text, new Command(action));
         }
 
-        public void CreateCourse_Clicked()
+        public async void CreateCourse_Clicked()
         {
-            Shell.Current.GoToAsync("//CourseModifier");
+            await Shell.Current.Navigation.PushAsync(new CourseDetailView(null));
         }
 
-        private void ListAllCourses_Clicked()
+        private async void ListAllCourses_Clicked()
         {
-            
+            await Shell.Current.GoToAsync("//CourseList");
         }
 
-        public void AddPerson_Clicked()
+        public async void AddPerson_Clicked()
         {
-            Shell.Current.GoToAsync("//StudentModifier");
+            await Shell.Current.GoToAsync("//StudentModifier");
         }
 
         private void RemovePerson_Clicked()

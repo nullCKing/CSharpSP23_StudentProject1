@@ -36,6 +36,21 @@ namespace Library.StudentManagement.Services
             courseList.Add(course);
         }
 
+        public void AddOrUpdate(Course course)
+        {
+            var existingCourse = courseList.FirstOrDefault(c => c.Code == course.Code);
+            if (existingCourse == null)
+            {
+                courseList.Add(course);
+            }
+            else
+            {
+                int index = courseList.IndexOf(existingCourse);
+                courseList[index] = course;
+            }
+        }
+
+
         public List<Course> Courses
         {
             get { return courseList; }

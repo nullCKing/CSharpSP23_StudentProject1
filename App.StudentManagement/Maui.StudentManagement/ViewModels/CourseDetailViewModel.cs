@@ -3,14 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Library.StudentManagement.Models;
 
 namespace Maui.StudentManagement.ViewModels
 {
     public class CourseDetailViewModel
     {
-        public string Name { get; set; }
-        public string Code { get; set; }
-        public string Description { get; set; }
+        public CourseDetailViewModel(Course course = null)
+        {
+            if (course != null)
+            {
+                Course = course;
+            }
+            else
+            {
+                Course = new Course();
+            }
+        }
 
+        public Course Course { get; set; }
     }
 }

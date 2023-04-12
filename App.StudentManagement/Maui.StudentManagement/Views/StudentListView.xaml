@@ -6,7 +6,7 @@
     <StackLayout>
         <SearchBar x:Name="searchBar"
                    Text="{Binding SearchText}"
-                   Placeholder="Search for a person..." />
+                   Placeholder="Search for a student..." />
 
         <ListView ItemsSource="{Binding FilteredPeople}">
         </ListView>
