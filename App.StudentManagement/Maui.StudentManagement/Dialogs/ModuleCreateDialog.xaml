@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui.StudentManagement.Dialogs.ModuleCreateDialog"
+             BackgroundColor="Transparent">
+    <Frame Padding="20" Margin="20" BackgroundColor="White" HasShadow="True">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" x:Name="DialogTitle" FontSize="24" FontAttributes="Bold" />
+            <Entry Grid.Row="1" x:Name="ModuleNameEntry" Placeholder="Module Name" />
+
+            <StackLayout Grid.Row="2">
+                <RadioButton x:Name="AssignmentRadioButton"
+                             Content="Assignment"
+                             IsChecked="True"
+                             CheckedChanged="OnRadioButtonCheckedChanged" />
+                <RadioButton x:Name="FileItemRadioButton"
+                             Content="File Item"
+                             CheckedChanged="OnRadioButtonCheckedChanged" />
+                <RadioButton x:Name="PageItemRadioButton"
+                             Content="Page Item"
+                             CheckedChanged="OnRadioButtonCheckedChanged" />
+
+                <StackLayout x:Name="AssignmentStackLayout">
+                    <ListView ItemsSource="{Binding SelectableAssignments}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid ColumnSpacing="10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Column="0" Text="{Binding Assignment.Name}" VerticalOptions="Center" />
+                                        <CheckBox Grid.Column="1" IsChecked="{Binding IsSelected}" />
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+                
+                <StackLayout x:Name="FileItemStackLayout">
+                    <!-- Add elements specific to the File Item option here -->
+                </StackLayout>
+                <StackLayout x:Name="PageItemStackLayout">
+                    <!-- Add elements specific to the Page Item option here -->
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Grid.Row="3" Orientation="Horizontal" HorizontalOptions="End" Spacing="10">
+                <Button x:Name="CancelButton" Text="Cancel" Clicked="OnCancelClicked" />
+                <Button x:Name="CreateButton" Text="Create" Clicked="OnCreateClicked" />
+            </StackLayout>
+        </Grid>
+    </Frame>
+</ContentPage>

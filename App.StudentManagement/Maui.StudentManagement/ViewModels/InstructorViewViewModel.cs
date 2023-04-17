@@ -56,17 +56,8 @@ namespace Maui.StudentManagement.ViewModels
                 CreateButtonModel("Create Course", CreateCourse_Clicked),
                 CreateButtonModel("List All Courses", ListAllCourses_Clicked),
                 CreateButtonModel("Add Student", AddPerson_Clicked),
-                CreateButtonModel("Remove Person", RemovePerson_Clicked),
+                CreateButtonModel("Remove Student", RemovePerson_Clicked),
                 CreateButtonModel("List all students", ListAllStudents_Clicked),
-                CreateButtonModel("Add Assignment", AddAssignment_Clicked),
-                CreateButtonModel("Update Assignment", UpdateAssignment_Clicked),
-                CreateButtonModel("Remove Assignment", RemoveAssignment_Clicked),
-                CreateButtonModel("Add Module", AddModule_Clicked),
-                CreateButtonModel("Update Module", UpdateModule_Clicked),
-                CreateButtonModel("Remove Module", RemoveModule_Clicked),
-                CreateButtonModel("Add Announcement", AddAnnouncement_Clicked),
-                CreateButtonModel("Update Announcement", UpdateAnnouncement_Clicked),
-                CreateButtonModel("Remove Announcement", RemoveAnnouncement_Clicked),
                 CreateButtonModel("Add Assignment Group", AddAssignmentGroup_Clicked),
                 CreateButtonModel("Remove Assignment Group", RemoveAssignmentGroup_Clicked),
                 CreateButtonModel("Add Grade", AddGrade_Clicked),
@@ -104,50 +95,6 @@ namespace Maui.StudentManagement.ViewModels
             Shell.Current.GoToAsync("//StudentList");
         }
 
-        private void AddAssignment_Clicked()
-        {
-        
-        }
-
-        private void UpdateAssignment_Clicked()
-        {
-          
-        }
-
-        private void RemoveAssignment_Clicked()
-        {
-           
-        }
-
-        private void AddModule_Clicked()
-        {
-           
-        }
-
-        private void UpdateModule_Clicked()
-        {
-            
-        }
-
-        private void RemoveModule_Clicked()
-        {
-            
-        }
-
-        private void AddAnnouncement_Clicked()
-        {
-            
-        }
-
-        private void UpdateAnnouncement_Clicked()
-        {
-           
-        }
-
-        private void RemoveAnnouncement_Clicked()
-        {
-           
-        }
 
         private void AddAssignmentGroup_Clicked()
         {

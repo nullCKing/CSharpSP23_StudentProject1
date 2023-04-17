@@ -10,14 +10,14 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>416ccdf2-1bd2-4787-b3a4-4df5e6132f54</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
     <RegisteredManifestChecksum>5051F93AA2573A218BED138CFB5065B6A17DC3D77650A75DEBA429AE561332CA</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>416ccdf2-1bd2-4787-b3a4-4df5e6132f54_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>416ccdf2-1bd2-4787-b3a4-4df5e6132f54_9zz4h110yvjzm!App</RegisteredUserModeAppID>
@@ -26,28 +26,28 @@
     <RegisteredVersion>1.0.0.1</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-04-12T04:05:53.408</Modified>
+      <Modified>2023-04-17T17:27:09.615</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-04-12T04:05:52.605</Modified>
+      <Modified>2023-04-17T17:27:09.342</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Maui.StudentManagement.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Maui.StudentManagement.runtimeconfig.json">
       <PackagePath>Maui.StudentManagement.runtimeconfig.json</PackagePath>
-      <Modified>2023-04-11T18:24:21.764</Modified>
+      <Modified>2023-04-14T04:02:50.854</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Maui.StudentManagement.dll">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Maui.StudentManagement.dll">
       <PackagePath>Maui.StudentManagement.dll</PackagePath>
-      <Modified>2023-04-12T04:05:51.248</Modified>
+      <Modified>2023-04-17T17:27:08.467</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Maui.StudentManagement.exe</PackagePath>
-      <Modified>2023-04-12T04:05:51.273</Modified>
+      <Modified>2023-04-17T17:27:08.477</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\chris\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.0\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -905,13 +905,13 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2022-09-07T21:54:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Library.StudentManagement\bin\Debug\net7.0\Library.StudentManagement.dll">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Library.StudentManagement\bin\Debug\net7.0\Library.StudentManagement.dll">
       <PackagePath>Library.StudentManagement.dll</PackagePath>
-      <Modified>2023-04-12T00:39:13.018</Modified>
+      <Modified>2023-04-14T03:57:16.179</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Maui.StudentManagement.deps.json">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Maui.StudentManagement.deps.json">
       <PackagePath>Maui.StudentManagement.deps.json</PackagePath>
-      <Modified>2023-04-12T04:05:53.242</Modified>
+      <Modified>2023-04-17T17:27:09.526</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.49\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -925,241 +925,241 @@
       <PackagePath>Microsoft.Maui.pri</PackagePath>
       <Modified>2022-10-28T05:27:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2023-04-10T18:25:52.017</Modified>
+      <Modified>2023-04-13T23:50:32.721</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.024</Modified>
+      <Modified>2023-04-13T23:50:36.948</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.025</Modified>
+      <Modified>2023-04-13T23:50:36.948</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.026</Modified>
+      <Modified>2023-04-13T23:50:36.949</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.026</Modified>
+      <Modified>2023-04-13T23:50:36.950</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.027</Modified>
+      <Modified>2023-04-13T23:50:36.951</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2023-04-10T18:25:54.990</Modified>
+      <Modified>2023-04-13T23:50:36.904</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2023-04-10T18:25:54.991</Modified>
+      <Modified>2023-04-13T23:50:36.906</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-04-10T18:25:54.993</Modified>
+      <Modified>2023-04-13T23:50:36.908</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-04-10T18:25:54.993</Modified>
+      <Modified>2023-04-13T23:50:36.909</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-04-10T18:25:54.994</Modified>
+      <Modified>2023-04-13T23:50:36.910</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-04-10T18:25:54.995</Modified>
+      <Modified>2023-04-13T23:50:36.911</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-04-10T18:25:54.995</Modified>
+      <Modified>2023-04-13T23:50:36.912</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-04-10T18:25:54.996</Modified>
+      <Modified>2023-04-13T23:50:36.912</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-04-10T18:25:54.996</Modified>
+      <Modified>2023-04-13T23:50:36.913</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-04-10T18:25:54.997</Modified>
+      <Modified>2023-04-13T23:50:36.914</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-04-10T18:25:54.998</Modified>
+      <Modified>2023-04-13T23:50:36.914</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-04-10T18:25:54.998</Modified>
+      <Modified>2023-04-13T23:50:36.915</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-04-10T18:25:54.999</Modified>
+      <Modified>2023-04-13T23:50:36.916</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.000</Modified>
+      <Modified>2023-04-13T23:50:36.916</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.000</Modified>
+      <Modified>2023-04-13T23:50:36.917</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.001</Modified>
+      <Modified>2023-04-13T23:50:36.918</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.001</Modified>
+      <Modified>2023-04-13T23:50:36.918</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.002</Modified>
+      <Modified>2023-04-13T23:50:36.919</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.002</Modified>
+      <Modified>2023-04-13T23:50:36.920</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.003</Modified>
+      <Modified>2023-04-13T23:50:36.921</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.004</Modified>
+      <Modified>2023-04-13T23:50:36.921</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.004</Modified>
+      <Modified>2023-04-13T23:50:36.922</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.005</Modified>
+      <Modified>2023-04-13T23:50:36.923</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.005</Modified>
+      <Modified>2023-04-13T23:50:36.924</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.006</Modified>
+      <Modified>2023-04-13T23:50:36.925</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.006</Modified>
+      <Modified>2023-04-13T23:50:36.925</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.007</Modified>
+      <Modified>2023-04-13T23:50:36.926</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.007</Modified>
+      <Modified>2023-04-13T23:50:36.927</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.008</Modified>
+      <Modified>2023-04-13T23:50:36.928</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.009</Modified>
+      <Modified>2023-04-13T23:50:36.929</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.009</Modified>
+      <Modified>2023-04-13T23:50:36.929</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.010</Modified>
+      <Modified>2023-04-13T23:50:36.930</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.010</Modified>
+      <Modified>2023-04-13T23:50:36.931</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.011</Modified>
+      <Modified>2023-04-13T23:50:36.932</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.011</Modified>
+      <Modified>2023-04-13T23:50:36.932</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.012</Modified>
+      <Modified>2023-04-13T23:50:36.933</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.013</Modified>
+      <Modified>2023-04-13T23:50:36.934</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.013</Modified>
+      <Modified>2023-04-13T23:50:36.935</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.014</Modified>
+      <Modified>2023-04-13T23:50:36.935</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.014</Modified>
+      <Modified>2023-04-13T23:50:36.936</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.015</Modified>
+      <Modified>2023-04-13T23:50:36.936</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.015</Modified>
+      <Modified>2023-04-13T23:50:36.937</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.016</Modified>
+      <Modified>2023-04-13T23:50:36.938</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.016</Modified>
+      <Modified>2023-04-13T23:50:36.938</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.017</Modified>
+      <Modified>2023-04-13T23:50:36.939</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.018</Modified>
+      <Modified>2023-04-13T23:50:36.941</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.018</Modified>
+      <Modified>2023-04-13T23:50:36.941</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.019</Modified>
+      <Modified>2023-04-13T23:50:36.942</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.020</Modified>
+      <Modified>2023-04-13T23:50:36.943</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.021</Modified>
+      <Modified>2023-04-13T23:50:36.944</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.021</Modified>
+      <Modified>2023-04-13T23:50:36.944</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.022</Modified>
+      <Modified>2023-04-13T23:50:36.945</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-04-10T18:25:55.023</Modified>
+      <Modified>2023-04-13T23:50:36.947</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

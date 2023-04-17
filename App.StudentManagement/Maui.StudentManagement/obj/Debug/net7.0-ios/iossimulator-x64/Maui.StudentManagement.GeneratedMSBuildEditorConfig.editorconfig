@@ -8,69 +8,105 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Maui.StudentManagement
-build_property.ProjectDir = C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\
+build_property.ProjectDir = C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\
 
-[C:/Users/chris/source/repos/CSharpSP23_StudentProject1/App.StudentManagement/Maui.StudentManagement/App.xaml]
+[C:/Users/chris/source/repos/student-management-system/App.StudentManagement/Maui.StudentManagement/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.StudentManagement.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/chris/source/repos/CSharpSP23_StudentProject1/App.StudentManagement/Maui.StudentManagement/AppShell.xaml]
+[C:/Users/chris/source/repos/student-management-system/App.StudentManagement/Maui.StudentManagement/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.StudentManagement.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/chris/source/repos/CSharpSP23_StudentProject1/App.StudentManagement/Maui.StudentManagement/MainPage.xaml]
+[C:/Users/chris/source/repos/student-management-system/App.StudentManagement/Maui.StudentManagement/Dialogs/AnnouncementCreateDialog.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Maui.StudentManagement.Dialogs.AnnouncementCreateDialog.xaml
+build_metadata.AdditionalFiles.TargetPath = Dialogs\AnnouncementCreateDialog.xaml
+build_metadata.AdditionalFiles.RelativePath = Dialogs\AnnouncementCreateDialog.xaml
+
+[C:/Users/chris/source/repos/student-management-system/App.StudentManagement/Maui.StudentManagement/Dialogs/AnnouncementDialog.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Maui.StudentManagement.Dialogs.AnnouncementDialog.xaml
+build_metadata.AdditionalFiles.TargetPath = Dialogs\AnnouncementDialog.xaml
+build_metadata.AdditionalFiles.RelativePath = Dialogs\AnnouncementDialog.xaml
+
+[C:/Users/chris/source/repos/student-management-system/App.StudentManagement/Maui.StudentManagement/Dialogs/AssignmentCreateDialog.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Maui.StudentManagement.Dialogs.AssignmentCreateDialog.xaml
+build_metadata.AdditionalFiles.TargetPath = Dialogs\AssignmentCreateDialog.xaml
+build_metadata.AdditionalFiles.RelativePath = Dialogs\AssignmentCreateDialog.xaml
+
+[C:/Users/chris/source/repos/student-management-system/App.StudentManagement/Maui.StudentManagement/Dialogs/AssignmentDialog.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Maui.StudentManagement.Dialogs.AssignmentDialog.xaml
+build_metadata.AdditionalFiles.TargetPath = Dialogs\AssignmentDialog.xaml
+build_metadata.AdditionalFiles.RelativePath = Dialogs\AssignmentDialog.xaml
+
+[C:/Users/chris/source/repos/student-management-system/App.StudentManagement/Maui.StudentManagement/Dialogs/ModuleCreateDialog.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Maui.StudentManagement.Dialogs.ModuleCreateDialog.xaml
+build_metadata.AdditionalFiles.TargetPath = Dialogs\ModuleCreateDialog.xaml
+build_metadata.AdditionalFiles.RelativePath = Dialogs\ModuleCreateDialog.xaml
+
+[C:/Users/chris/source/repos/student-management-system/App.StudentManagement/Maui.StudentManagement/Dialogs/ModuleDialog.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Maui.StudentManagement.Dialogs.ModuleDialog.xaml
+build_metadata.AdditionalFiles.TargetPath = Dialogs\ModuleDialog.xaml
+build_metadata.AdditionalFiles.RelativePath = Dialogs\ModuleDialog.xaml
+
+[C:/Users/chris/source/repos/student-management-system/App.StudentManagement/Maui.StudentManagement/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.StudentManagement.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/chris/source/repos/CSharpSP23_StudentProject1/App.StudentManagement/Maui.StudentManagement/Resources/Styles/Colors.xaml]
+[C:/Users/chris/source/repos/student-management-system/App.StudentManagement/Maui.StudentManagement/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.StudentManagement.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/chris/source/repos/CSharpSP23_StudentProject1/App.StudentManagement/Maui.StudentManagement/Resources/Styles/Styles.xaml]
+[C:/Users/chris/source/repos/student-management-system/App.StudentManagement/Maui.StudentManagement/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.StudentManagement.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/chris/source/repos/CSharpSP23_StudentProject1/App.StudentManagement/Maui.StudentManagement/Views/CourseDetailView.xaml]
+[C:/Users/chris/source/repos/student-management-system/App.StudentManagement/Maui.StudentManagement/Views/CourseDetailView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.StudentManagement.Views.CourseDetailView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\CourseDetailView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\CourseDetailView.xaml
 
-[C:/Users/chris/source/repos/CSharpSP23_StudentProject1/App.StudentManagement/Maui.StudentManagement/Views/CourseListView.xaml]
+[C:/Users/chris/source/repos/student-management-system/App.StudentManagement/Maui.StudentManagement/Views/CourseListView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.StudentManagement.Views.CourseListView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\CourseListView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\CourseListView.xaml
 
-[C:/Users/chris/source/repos/CSharpSP23_StudentProject1/App.StudentManagement/Maui.StudentManagement/Views/InstructorView.xaml]
+[C:/Users/chris/source/repos/student-management-system/App.StudentManagement/Maui.StudentManagement/Views/InstructorView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.StudentManagement.Views.InstructorView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\InstructorView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\InstructorView.xaml
 
-[C:/Users/chris/source/repos/CSharpSP23_StudentProject1/App.StudentManagement/Maui.StudentManagement/Views/PersonDetailView.xaml]
+[C:/Users/chris/source/repos/student-management-system/App.StudentManagement/Maui.StudentManagement/Views/PersonDetailView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.StudentManagement.Views.PersonDetailView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\PersonDetailView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\PersonDetailView.xaml
 
-[C:/Users/chris/source/repos/CSharpSP23_StudentProject1/App.StudentManagement/Maui.StudentManagement/Views/StudentListView.xaml]
+[C:/Users/chris/source/repos/student-management-system/App.StudentManagement/Maui.StudentManagement/Views/StudentListView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.StudentManagement.Views.StudentListView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\StudentListView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\StudentListView.xaml
 
-[C:/Users/chris/source/repos/CSharpSP23_StudentProject1/App.StudentManagement/Maui.StudentManagement/Views/StudentView.xaml]
+[C:/Users/chris/source/repos/student-management-system/App.StudentManagement/Maui.StudentManagement/Views/StudentView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.StudentManagement.Views.StudentView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\StudentView.xaml

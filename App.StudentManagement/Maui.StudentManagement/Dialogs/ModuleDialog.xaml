@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui.StudentManagement.Dialogs.ModuleDialog"
+             BackgroundColor="Transparent">
+    <StackLayout>
+        <Label Text="Modules" FontSize="24" HorizontalOptions="Center" />
+        <ListView x:Name="ModulesListView" ItemsSource="{Binding Path=Modules}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid ColumnSpacing="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="{Binding Name}" VerticalOptions="Center" />
+                            <Button Grid.Column="2" Text="Modify" WidthRequest="100" VerticalOptions="Center" HorizontalOptions="End"
+                            Clicked="ModifyModule" CommandParameter="{Binding}" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Back" Clicked="BackButtonClicked" />
+    </StackLayout>
+</ContentPage>

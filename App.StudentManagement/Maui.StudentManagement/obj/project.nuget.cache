@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OuS44J3sV2WtgNZ4Cka2IASO+eVTqdrCxGxhN6HOWbf25GSohov+iXhVKHuwCSuLU9y1++uHsWcYxTqW8dFRAg==",
+  "dgSpecHash": "3hatZwEas7KQRq8z2/cDrdaH75pbID7AKfqVH9BgOgPxE6o7YWnavBUCyKO+JuSbdYNni1aXta88xhVxQ8MMQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\chris\\source\\repos\\CSharpSP23_StudentProject1\\App.StudentManagement\\Maui.StudentManagement\\Maui.StudentManagement.csproj",
+  "projectFilePath": "C:\\Users\\chris\\source\\repos\\student-management-system\\App.StudentManagement\\Maui.StudentManagement\\Maui.StudentManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chris\\.nuget\\packages\\googlegson\\2.9.1\\googlegson.2.9.1.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",

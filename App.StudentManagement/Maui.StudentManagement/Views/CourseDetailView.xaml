@@ -2,19 +2,29 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Maui.StudentManagement.Views.CourseDetailView"
-             Title="CourseDetailView">
-    <VerticalStackLayout>
-        <Label Text="Name" VerticalOptions="Center" HorizontalOptions="Center" />
-        <Entry Text="{Binding Path=Course.Name, Mode=TwoWay}"></Entry>
-        <Label Text="Code" VerticalOptions="Center" HorizontalOptions="Center" />
-        <Entry Text="{Binding Path=Course.Code, Mode=TwoWay}"></Entry>
-        <Label Text="Description" VerticalOptions="Center" HorizontalOptions="Center" />
-        <Entry Text="{Binding Path=Course.Description, Mode=TwoWay}"></Entry>
-        <Button Text="Ok" Clicked="OkClick" WidthRequest="200" />
+             Title="CourseDetailView"
+             x:Name="courseDetailView">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="Name" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Entry Text="{Binding Path=Course.Name, Mode=TwoWay}"></Entry>
+            <Label Text="Code" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Entry Text="{Binding Path=Course.Code, Mode=TwoWay}"></Entry>
+            <Label Text="Description" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Entry Text="{Binding Path=Course.Description, Mode=TwoWay}"></Entry>
+            
+            <Button Grid.Column="1" Text="Add Modules" Clicked="AddModuleClicked" />
+            <Button Grid.Column="1" Text="View Modules " Clicked="ViewModuleClicked" />
 
-        <Button
-            Text="Ok"
-            Clicked="OkClick"
-            WidthRequest ="200"/>
-    </VerticalStackLayout>
+            <Button Grid.Column="1" Text="Add Assignments" Clicked="AddAssignmentClicked" />
+            <Button Grid.Column="1" Text="ViewAssignments" Clicked="ViewAssignmentClicked" />
+
+            <Button Grid.Column="1" Text="Add Announcement" Clicked="AddAnnouncementClicked" />
+            <Button Grid.Column="1" Text="View" Clicked="ViewAnnouncementClicked" />
+
+            <Button Text="Ok" Clicked="OkClick" WidthRequest ="200"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

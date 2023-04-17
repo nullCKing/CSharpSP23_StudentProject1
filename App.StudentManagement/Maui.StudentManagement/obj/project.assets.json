@@ -24257,11 +24257,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chris\\source\\repos\\CSharpSP23_StudentProject1\\App.StudentManagement\\Maui.StudentManagement\\Maui.StudentManagement.csproj",
+      "projectUniqueName": "C:\\Users\\chris\\source\\repos\\student-management-system\\App.StudentManagement\\Maui.StudentManagement\\Maui.StudentManagement.csproj",
       "projectName": "Maui.StudentManagement",
-      "projectPath": "C:\\Users\\chris\\source\\repos\\CSharpSP23_StudentProject1\\App.StudentManagement\\Maui.StudentManagement\\Maui.StudentManagement.csproj",
+      "projectPath": "C:\\Users\\chris\\source\\repos\\student-management-system\\App.StudentManagement\\Maui.StudentManagement\\Maui.StudentManagement.csproj",
       "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chris\\source\\repos\\CSharpSP23_StudentProject1\\App.StudentManagement\\Maui.StudentManagement\\obj\\",
+      "outputPath": "C:\\Users\\chris\\source\\repos\\student-management-system\\App.StudentManagement\\Maui.StudentManagement\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -24287,32 +24287,32 @@
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
           "projectReferences": {
-            "C:\\Users\\chris\\source\\repos\\CSharpSP23_StudentProject1\\App.StudentManagement\\Library.StudentManagement\\Library.StudentManagement.csproj": {
-              "projectPath": "C:\\Users\\chris\\source\\repos\\CSharpSP23_StudentProject1\\App.StudentManagement\\Library.StudentManagement\\Library.StudentManagement.csproj"
+            "C:\\Users\\chris\\source\\repos\\student-management-system\\App.StudentManagement\\Library.StudentManagement\\Library.StudentManagement.csproj": {
+              "projectPath": "C:\\Users\\chris\\source\\repos\\student-management-system\\App.StudentManagement\\Library.StudentManagement\\Library.StudentManagement.csproj"
             }
           }
         },
         "net7.0-ios16.0": {
           "targetAlias": "net7.0-ios",
           "projectReferences": {
-            "C:\\Users\\chris\\source\\repos\\CSharpSP23_StudentProject1\\App.StudentManagement\\Library.StudentManagement\\Library.StudentManagement.csproj": {
-              "projectPath": "C:\\Users\\chris\\source\\repos\\CSharpSP23_StudentProject1\\App.StudentManagement\\Library.StudentManagement\\Library.StudentManagement.csproj"
+            "C:\\Users\\chris\\source\\repos\\student-management-system\\App.StudentManagement\\Library.StudentManagement\\Library.StudentManagement.csproj": {
+              "projectPath": "C:\\Users\\chris\\source\\repos\\student-management-system\\App.StudentManagement\\Library.StudentManagement\\Library.StudentManagement.csproj"
             }
           }
         },
         "net7.0-maccatalyst15.4": {
           "targetAlias": "net7.0-maccatalyst",
           "projectReferences": {
-            "C:\\Users\\chris\\source\\repos\\CSharpSP23_StudentProject1\\App.StudentManagement\\Library.StudentManagement\\Library.StudentManagement.csproj": {
-              "projectPath": "C:\\Users\\chris\\source\\repos\\CSharpSP23_StudentProject1\\App.StudentManagement\\Library.StudentManagement\\Library.StudentManagement.csproj"
+            "C:\\Users\\chris\\source\\repos\\student-management-system\\App.StudentManagement\\Library.StudentManagement\\Library.StudentManagement.csproj": {
+              "projectPath": "C:\\Users\\chris\\source\\repos\\student-management-system\\App.StudentManagement\\Library.StudentManagement\\Library.StudentManagement.csproj"
             }
           }
         },
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
           "projectReferences": {
-            "C:\\Users\\chris\\source\\repos\\CSharpSP23_StudentProject1\\App.StudentManagement\\Library.StudentManagement\\Library.StudentManagement.csproj": {
-              "projectPath": "C:\\Users\\chris\\source\\repos\\CSharpSP23_StudentProject1\\App.StudentManagement\\Library.StudentManagement\\Library.StudentManagement.csproj"
+            "C:\\Users\\chris\\source\\repos\\student-management-system\\App.StudentManagement\\Library.StudentManagement\\Library.StudentManagement.csproj": {
+              "projectPath": "C:\\Users\\chris\\source\\repos\\student-management-system\\App.StudentManagement\\Library.StudentManagement\\Library.StudentManagement.csproj"
             }
           }
         }

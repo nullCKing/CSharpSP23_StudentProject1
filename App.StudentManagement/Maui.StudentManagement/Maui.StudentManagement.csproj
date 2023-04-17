@@ -57,12 +57,33 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Dialogs\ModuleDialog.xaml.cs">
+	    <DependentUpon>ModuleDialog.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\CourseDetailView.xaml.cs">
 	    <DependentUpon>CourseDetailView.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Dialogs\AnnouncementCreateDialog.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Dialogs\AnnouncementDialog.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Dialogs\AssignmentCreateDialog.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Dialogs\AssignmentDialog.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Dialogs\ModuleCreateDialog.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Dialogs\ModuleDialog.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\CourseListView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

@@ -1,1 +1,1 @@
-C:\Users\chris\source\repos\CSharpSP23_StudentProject1\App.StudentManagement\Maui.StudentManagement\Maui.StudentManagement.csproj;x64
+C:\Users\chris\source\repos\student-management-system\App.StudentManagement\Maui.StudentManagement\Maui.StudentManagement.csproj;x64

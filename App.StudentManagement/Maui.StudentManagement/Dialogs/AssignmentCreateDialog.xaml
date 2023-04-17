@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui.StudentManagement.Dialogs.AssignmentCreateDialog"
+             BackgroundColor="Transparent">
+    <Frame Padding="20" Margin="20" BackgroundColor="White" HasShadow="True">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" x:Name="DialogTitle" FontSize="24" FontAttributes="Bold" />
+            <Entry Grid.Row="1" x:Name="AssignmentNameEntry" Placeholder="Assignment Name" />
+
+            <Entry Grid.Row="2" x:Name="AssignmentDescriptionEntry" Placeholder="Assignment Description" />
+
+            <DatePicker Grid.Row="3" />
+
+            <StackLayout Grid.Row="4" Orientation="Horizontal" HorizontalOptions="End" Spacing="10">
+                <Button x:Name="CancelButton" Text="Cancel" Clicked="OnCancelClicked" />
+                <Button x:Name="CreateButton" Text="Create" Clicked="OnCreateClicked" />
+            </StackLayout>
+        </Grid>
+    </Frame>
+</ContentPage>
